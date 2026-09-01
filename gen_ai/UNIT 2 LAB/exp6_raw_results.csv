@@ -1,0 +1,160 @@
+strategy,test_number,message,gold_category,gold_urgency,gold_sentiment,model_output,valid_json,category_correct,urgency_correct,sentiment_correct,prompt_tokens,completion_tokens,latency_ms,error
+zero-shot,1,My order was supposed to arrive yesterday but the tracking still says it is in transit.,DELIVERY_DELAY,MEDIUM,NEGATIVE,"{
+    ""category"": ""DELIVERY_DELAY"",
+    ""urgency"": ""HIGH"",
+    ""sentiment"": ""NEGATIVE""
+}",1,1,0,1,332,91,3640.06,
+zero-shot,2,I was charged twice for the same order. Please refund the extra payment.,PAYMENT_REFUND,HIGH,NEGATIVE,"{
+    ""category"": ""PAYMENT_REFUND"",
+    ""urgency"": ""MEDIUM"",
+    ""sentiment"": ""NEGATIVE""
+}",1,1,0,1,304,185,2768.84,
+zero-shot,3,The headphones I received only work on one side.,PRODUCT_DEFECT,MEDIUM,NEGATIVE,"We need to classify the message: ""The headphones I received only work on one side.""
+
+Category: PRODUCT_DEFECT (defective product). Urgency? Probably MEDIUM? It's a defect but not urgent maybe MEDIUM. Sentiment? Likely NEGATIVE (complaint). So output JSON with fields category, urgency, sentiment.
+
+Category must be exactly one of allowed categories: DELIVERY_DELAY, PAYMENT_REFUND, PRODUCT_DEFECT, ACCOUNT_ACCESS, FEEDBACK_OTHER. So PRODUCT_DEFECT.
+
+Urgency: HIGH, MEDIUM, LOW. The defect is notable but not urgent maybe MEDIUM. Could be HIGH if immediate? The message is",0,0,0,0,300,150,1989.39,
+zero-shot,4,I forgot my password and the reset link is not reaching my email.,ACCOUNT_ACCESS,HIGH,NEGATIVE,"{
+    ""category"": ""ACCOUNT_ACCESS"",
+    ""urgency"": ""MEDIUM"",
+    ""sentiment"": ""NEGATIVE""
+}",1,1,0,1,303,136,1547.45,
+zero-shot,5,"Great service, my package arrived earlier than expected!",FEEDBACK_OTHER,LOW,POSITIVE,"{
+    ""category"": ""FEEDBACK_OTHER"",
+    ""urgency"": ""LOW"",
+    ""sentiment"": ""POSIT",0,0,0,0,299,150,23272.37,
+zero-shot,6,Where???,DELIVERY_DELAY,MEDIUM,NEUTRAL,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - Role: Support-triage engine for e-commerce
+   - Task: Classify customer message into exactly one category
+   - Allowed categories: DELIVERY_DELAY, PAYMENT_REFUND, PRODUCT_DEFECT, ACCOUNT_ACCESS, FEEDBACK_OTHER
+   - Also assign urgency (HIGH/MEDIUM/LOW) and sentiment (POSITIVE/NEUTRAL/NEGATIVE)
+   - Output must be valid JSON with exactly those three fields
+   - No explanations, no markdown, no echoing order IDs
+   - Customer message: ""Where???""
+
+2.  **Analyze the Customer Message:**",0,0,0,0,292,150,5861.12,
+zero-shot,7,Order 784521 is still not shipped and I need it before tomorrow's wedding.,DELIVERY_DELAY,HIGH,NEGATIVE,,0,0,0,0,711,150,12933.13,
+zero-shot,8,Refund says completed nine days ago but the money is still missing from my bank account.,PAYMENT_REFUND,HIGH,NEGATIVE,User Safety: safe,0,0,0,0,706,145,2071.98,
+zero-shot,9,"Superb job guys, because obviously waiting three weeks for a phone is exactly what I wanted.",DELIVERY_DELAY,HIGH,NEGATIVE,,0,0,0,0,334,150,11950.52,
+zero-shot,10,Bhai payment ho gaya but order confirm nahi hua.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,331,150,1841.54,
+zero-shot,11,"The product looks nice, but the screen has a crack straight out of the box.",PRODUCT_DEFECT,HIGH,NEGATIVE,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - Role: support-triage engine for e-commerce
+   - Task: Classify customer message into exactly one category, assign urgency and sentiment
+   - Output format: valid JSON with exactly `category`, `urgency`, `sentiment` fields
+   - Constraints: No explanations, no markdown, no echoing order IDs
+   - Customer message: ""The product looks nice, but the screen has a crack straight out of the box.""
+
+2.  **Analyze Customer Message:**
+   - ""The product looks nice"" - positive comment about appearance
+   - ""but the screen has a crack straight out of the box"" - product is damaged/",0,0,0,0,306,150,928.84,
+zero-shot,12,Can you tell me whether this product is available in blue?,FEEDBACK_OTHER,LOW,NEUTRAL,,0,0,0,0,329,150,2040.69,
+zero-shot,13,I cannot log into my account after changing my phone number.,ACCOUNT_ACCESS,MEDIUM,NEGATIVE,,0,0,0,0,701,150,12453.62,
+zero-shot,14,The refund was processed and I can now see the money in my account. Thanks!,PAYMENT_REFUND,LOW,POSITIVE,"Here's a thinking process:
+
+1.  **Analyze the Customer Message**: ""The refund was processed and I can now see the money in my account. Thanks!""
+2.  **Identify the Core Issue**: 
+   - Mentions a refund was processed
+   - Money is now visible in the account
+   - Ends with ""Thanks!"" (positive tone)
+3.  **Map to Categories**:
+   - DELIVERY_DELAY: No mention of delivery, shipping, late/missing items.
+   - PAYMENT_REFUND: Directly mentions refund and money in account. This fits perfectly.
+   - PRODUCT_DEFECT: No mention of damaged/faulty products.
+   - ACCOUNT_ACCESS: No mention",0,0,0,0,306,150,1051.47,
+zero-shot,15,My delivery is late and the box arrived damaged. The actual product seems okay.,DELIVERY_DELAY,MEDIUM,NEGATIVE,"We need to classify into exactly one category among the five. The message: ""My delivery is late and the box arrived damaged. The actual product seems okay.""
+
+We have two issues: delivery is late (DELIVERY_DELAY) and box arrived damaged (PRODUCT_DEFECT? Actually damaged packaging maybe considered PRODUCT_DEFECT? The category definitions: PRODUCT_DEFECT: Problems involving damaged, broken, faulty, or defective products. The box is damaged, but the product seems okay. The damage is to the box, not the product. Could be considered delivery issue? Delivery delay and damaged box could be considered delivery problem? The categories: DELIVERY_DELAY covers late, delayed, missing, or not-yet-shipped",0,0,0,0,305,150,2767.3,
+one-shot,1,My order was supposed to arrive yesterday but the tracking still says it is in transit.,DELIVERY_DELAY,MEDIUM,NEGATIVE,"{""category"":""DELIVERY_DELAY"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,0,1,333,25,11480.2,
+one-shot,2,I was charged twice for the same order. Please refund the extra payment.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,289,150,7060.41,
+one-shot,3,The headphones I received only work on one side.,PRODUCT_DEFECT,MEDIUM,NEGATIVE,,0,0,0,0,741,150,2149.11,
+one-shot,4,I forgot my password and the reset link is not reaching my email.,ACCOUNT_ACCESS,HIGH,NEGATIVE,,0,0,0,0,350,150,3789.95,
+one-shot,5,"Great service, my package arrived earlier than expected!",FEEDBACK_OTHER,LOW,POSITIVE,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User provides a system prompt/role: ""You are a support-ticket triage engine for an e-commerce company.""
+   - Task: Classify customer message into exactly one category, assign urgency and sentiment.
+   - Allowed categories: DELIVERY_DELAY, PAYMENT_REFUND, PRODUCT_DEFECT, ACCOUNT_ACCESS, FEEDBACK_OTHER
+   - Allowed urgencies: HIGH, MEDIUM, LOW
+   - Allowed sentiments: POSITIVE, NEUTRAL, NEGATIVE
+   - Output format: Exactly one JSON object with fields: category, urgency, sentiment
+   - Constraints:",0,0,0,0,350,150,818.08,
+one-shot,6,Where???,DELIVERY_DELAY,MEDIUM,NEUTRAL,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - Role: Support-triage engine for e-commerce
+   - Task: Classify customer message into exactly one category, assign urgency and sentiment
+   - Input: ""Where???""
+   - Output format: Strict JSON with fields: category, urgency, sentiment
+   - Constraints: No explanations, no markdown, no echoing order IDs, only valid JSON
+
+2.  **Analyze the Message: ""Where???""**
+   - This is a very short message asking ""Where?"" 
+   - It likely refers to a delivery location, order status, or shipment tracking
+   - It doesn't explicitly mention payment, product defect, account access,",0,0,0,0,343,150,32447.09,
+one-shot,7,Order 784521 is still not shipped and I need it before tomorrow's wedding.,DELIVERY_DELAY,HIGH,NEGATIVE,"{""category"":""DELIVERY_DELAY"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,1,1,337,25,12581.26,
+one-shot,8,Refund says completed nine days ago but the money is still missing from my bank account.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,291,150,7004.92,
+one-shot,9,"Superb job guys, because obviously waiting three weeks for a phone is exactly what I wanted.",DELIVERY_DELAY,HIGH,NEGATIVE,"{""category"":""DELIVERY_DELAY"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,1,1,359,149,3157.11,
+one-shot,10,Bhai payment ho gaya but order confirm nahi hua.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,383,150,11922.4,
+one-shot,11,"The product looks nice, but the screen has a crack straight out of the box.",PRODUCT_DEFECT,HIGH,NEGATIVE,,0,0,0,0,291,150,21051.93,
+one-shot,12,Can you tell me whether this product is available in blue?,FEEDBACK_OTHER,LOW,NEUTRAL,,0,0,0,0,286,150,18105.1,
+one-shot,13,I cannot log into my account after changing my phone number.,ACCOUNT_ACCESS,MEDIUM,NEGATIVE,"{""category"":""ACCOUNT_ACCESS"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,0,1,378,18,6229.08,
+one-shot,14,The refund was processed and I can now see the money in my account. Thanks!,PAYMENT_REFUND,LOW,POSITIVE,"{""category"":""FEEDBACK_OTHER"",""urgency"":""LOW"",""sentiment"":""POSITIVE""}",1,0,1,1,363,140,6080.11,
+one-shot,15,My delivery is late and the box arrived damaged. The actual product seems okay.,DELIVERY_DELAY,MEDIUM,NEGATIVE,"{""category"":""DELIVERY_DELAY"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,0,1,356,332,1949.41,
+few-shot,1,My order was supposed to arrive yesterday but the tracking still says it is in transit.,DELIVERY_DELAY,MEDIUM,NEGATIVE,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - Role: Support-triage engine for e-commerce
+   - Task: Classify message into exactly one category, assign urgency and sentiment
+   - Output format: Strict JSON with keys: category, urgency, sentiment
+   - No explanations, no markdown, no order ID echoing
+   - Customer message: ""My order was supposed to arrive yesterday but the tracking still says it is in transit.""
+
+2.  **Determine Category:**
+   - Message: ""My order was supposed to arrive yesterday but the tracking still says it is in transit.""
+   - This is about a delivery not arriving on time, tracking shows ""in transit"" but past the expected date",0,0,0,0,537,150,1015.41,
+few-shot,2,I was charged twice for the same order. Please refund the extra payment.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,900,150,2255.99,
+few-shot,3,The headphones I received only work on one side.,PRODUCT_DEFECT,MEDIUM,NEGATIVE,,0,0,0,0,527,150,17115.71,
+few-shot,4,I forgot my password and the reset link is not reaching my email.,ACCOUNT_ACCESS,HIGH,NEGATIVE,"{""category"":""ACCOUNT_ACCESS"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,1,1,558,18,1238.63,
+few-shot,5,"Great service, my package arrived earlier than expected!",FEEDBACK_OTHER,LOW,POSITIVE,"{""category"":""FEEDBACK_OTHER"",""urgency"":""LOW"",""sentiment"":""POSITIVE""}",1,1,1,1,520,71,16615.36,
+few-shot,6,Where???,DELIVERY_DELAY,MEDIUM,NEUTRAL,"{""category"":""FEEDBACK_OTHER"",""urgency"":""LOW"",""sentiment"":""NEGATIVE""}",1,0,0,0,497,23,4752.35,
+few-shot,7,Order 784521 is still not shipped and I need it before tomorrow's wedding.,DELIVERY_DELAY,HIGH,NEGATIVE,"{""category"":""DELIVERY_DELAY"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,1,1,527,100,9975.31,
+few-shot,8,Refund says completed nine days ago but the money is still missing from my bank account.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,561,150,2887.01,
+few-shot,9,"Superb job guys, because obviously waiting three weeks for a phone is exactly what I wanted.",DELIVERY_DELAY,HIGH,NEGATIVE,"{""category"":""DELIVERY_DELAY"",""urgency"":""HIGH"",""sentiment"":""NEGATIVE""}",1,1,1,1,539,186,1683.42,
+few-shot,10,Bhai payment ho gaya but order confirm nahi hua.,PAYMENT_REFUND,HIGH,NEGATIVE,,0,0,0,0,558,150,4707.17,
+few-shot,11,"The product looks nice, but the screen has a crack straight out of the box.",PRODUCT_DEFECT,HIGH,NEGATIVE,,0,0,0,0,533,150,4508.01,
+few-shot,12,Can you tell me whether this product is available in blue?,FEEDBACK_OTHER,LOW,NEUTRAL,"We need to classify the message: ""Can you tell me whether this product is available in blue?"" This is a question about product availability/color. It's not a problem, it's a question. It's feedback? It's a question about product availability. It's not a complaint, not a problem. It's a request for info. That likely falls under FEEDBACK_OTHER (general questions, compliments). It's not a problem category. So category = FEEDBACK_OTHER. Urgency? It's a simple question, likely LOW urgency. Sentiment? Neutral? The tone is neutral question. Could be NEUTRAL. So output JSON: {""category"":""FEEDBACK_OTHER"",""urgency"":""LOW"",""",0,0,0,0,532,150,4908.04,
+few-shot,13,I cannot log into my account after changing my phone number.,ACCOUNT_ACCESS,MEDIUM,NEGATIVE,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User wants me to classify a customer message into exactly one category.
+   - Message: ""I cannot log into my account after changing my phone number.""
+   - I need to output exactly valid JSON with fields: category, urgency, sentiment.
+   - No explanations, no markdown, no order ID echoing.
+
+2.  **Identify Category:**
+   - Message: ""I cannot log into my account after changing my phone number.""
+   - This is clearly about account access/login issues.
+   - Category mapping: ACCOUNT_ACCESS.
+
+3.  **Determine Urgency:**
+   - The user can't log into their account. This is frustrating but typically not",0,0,0,0,532,150,11446.29,
+few-shot,14,The refund was processed and I can now see the money in my account. Thanks!,PAYMENT_REFUND,LOW,POSITIVE,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User wants me to classify a customer message into exactly one category.
+   - Message: ""The refund was processed and I can now see the money in my account. Thanks!""
+   - I need to output valid JSON with fields: category, urgency, sentiment.
+   - I must not provide explanations, markdown, or echo order IDs.
+
+2.  **Analyze the Message:**
+   - ""The refund was processed and I can now see the money in my account. Thanks!""
+   - Key elements: refund processed, money visible, ""Thanks!"" (positive tone)
+   - Let's check categories:
+     - DELIVERY_DELAY: No mention of delivery",0,0,0,0,537,150,945.95,
+few-shot,15,My delivery is late and the box arrived damaged. The actual product seems okay.,DELIVERY_DELAY,MEDIUM,NEGATIVE,,0,0,0,0,445,150,6367.55,

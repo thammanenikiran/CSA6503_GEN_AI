@@ -1,0 +1,69 @@
+Industrial Robotics and Factory Automation
+
+An industrial robot is an automatically controlled, reprogrammable, multipurpose
+manipulator that is programmable in three or more axes. Reprogrammability separates
+a true robot from fixed automation such as a cam driven machine, and it is what
+allows one robot cell to build one product this month and a different product the
+next.
+
+The mechanical structure of a robot is a chain of rigid links connected by joints.
+Revolute joints rotate and prismatic joints slide, and the number of independent
+joints gives the number of degrees of freedom. Six degrees of freedom are needed to
+place the end effector at an arbitrary position and orientation in space. Common
+configurations include the articulated arm, which offers the largest dexterous
+workspace, the SCARA arm used for assembly and pick and place, the delta parallel
+robot used for high speed packaging, and the Cartesian gantry used for large
+working volumes.
+
+Kinematics relates joint angles to end effector position. Forward kinematics
+computes the tool position from known joint angles and has a unique solution.
+Inverse kinematics computes the joint angles required to reach a desired tool
+position and may have several solutions, one solution, or none if the point lies
+outside the workspace. The Denavit Hartenberg convention assigns a coordinate frame
+to each link so the transformation between links is described by four parameters.
+Singular configurations, where two joint axes become collinear, cause the robot to
+lose a degree of freedom and must be avoided in trajectory planning.
+
+Actuation is dominated by alternating current servo motors with integrated encoders
+and harmonic drive gearboxes that provide high reduction ratios with very low
+backlash. Hydraulic actuation is still used for very heavy payloads and pneumatic
+actuation for simple two position grippers. The end effector may be a parallel jaw
+gripper, a vacuum cup array, a welding torch, a paint atomiser or a dispensing
+nozzle.
+
+Sensing gives the robot awareness of its environment. Internal sensors measure joint
+position, velocity and motor current. External sensors include machine vision
+cameras for part location and inspection, force and torque sensors at the wrist for
+assembly tasks such as inserting a shaft into a bearing, proximity sensors, and
+laser profile scanners for weld seam tracking. Machine vision has advanced rapidly
+because convolutional neural networks can classify defects that were previously
+detectable only by a trained human inspector.
+
+Control architecture is hierarchical. A current loop runs at tens of kilohertz, a
+velocity loop above it, and a position loop above that. The trajectory generator
+produces a smooth path with controlled acceleration so the robot does not excite
+structural vibration. Modern controllers add feedforward compensation for gravity,
+friction and inertia coupling, and impedance control that lets the robot behave
+like a programmable spring when it contacts the workpiece.
+
+Collaborative robots, called cobots, share a workspace with human operators without
+a safety fence. They achieve this through low mass and rounded geometry, torque
+sensing in every joint to detect contact, speed and separation monitoring using
+laser scanners, and a certified safety controller that limits force and power. The
+standard ISO 10218 and the technical specification ISO TS 15066 define permissible
+contact forces for each part of the human body.
+
+Programming methods have broadened. Teach pendant programming records points as the
+operator moves the robot manually. Offline programming builds and simulates the
+whole cell in a computer aided design environment, avoiding production stoppage.
+Lead through programming lets the operator guide a cobot arm by hand. Learning from
+demonstration and reinforcement learning are increasingly used for tasks that are
+hard to specify explicitly, such as bin picking of randomly oriented parts.
+
+Industrial robots are now embedded in Industry 4.0, where machines, products and
+enterprise software exchange data continuously. A robot cell publishes cycle time,
+torque and vibration data to a cloud platform where predictive maintenance models
+estimate remaining gearbox life. Digital twins mirror the physical cell in software
+so a process change can be validated virtually before deployment. Reported effects
+include thirty to fifty percent higher throughput and large reductions in scrap and
+in workplace injuries.

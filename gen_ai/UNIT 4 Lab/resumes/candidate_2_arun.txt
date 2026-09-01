@@ -1,0 +1,23 @@
+ARUN KUMAR S
+B.E. Mechanical Engineering, 2023 | CGPA 8.1
+Coimbatore | arun.kumar@example.com
+
+PROFILE
+Design engineer specialising in CAD modelling, thermal analysis and manufacturing
+process improvement.
+
+SKILLS
+SolidWorks, AutoCAD, CATIA, ANSYS, thermodynamics, finite element analysis,
+GD and T, lean manufacturing, MATLAB, basic Python
+
+EXPERIENCE
+Graduate Engineer Trainee, automotive component manufacturer (1 year)
+- Redesigned a cooling fin geometry, reducing operating temperature by 12 degrees.
+- Performed structural FEA on brackets and prepared production drawings.
+
+PROJECTS
+- Design and fabrication of a solar powered water pump.
+- CFD study of airflow over a car spoiler using ANSYS Fluent.
+
+CERTIFICATIONS
+SolidWorks Associate, Six Sigma Green Belt

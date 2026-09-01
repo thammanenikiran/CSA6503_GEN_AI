@@ -1,0 +1,10 @@
+Metric,Value
+Actual PAYMENT_REFUND,4/15
+Actual PAYMENT_REFUND %,26.67%
+Predicted PAYMENT_REFUND,2/15
+Predicted PAYMENT_REFUND %,13.33%
+Shift,-13.33 percentage points
+Category accuracy,6/15
+Category accuracy %,40.00%
+Valid JSON,6/15
+Valid JSON rate,40.00%

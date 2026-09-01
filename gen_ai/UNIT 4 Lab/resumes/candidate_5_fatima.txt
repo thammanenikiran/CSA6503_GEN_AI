@@ -1,0 +1,21 @@
+FATIMA BEGUM
+M.E. Computer Science (Data Science), 2024 | CGPA 8.9
+Bengaluru | fatima.b@example.com
+
+PROFILE
+Data scientist with 2 years of industry experience delivering production machine
+learning models for retail forecasting.
+
+SKILLS
+Python, machine learning, deep learning, TensorFlow, scikit-learn, pandas, NumPy,
+SQL, Spark, Airflow, Git, AWS SageMaker, statistics, time series forecasting
+
+EXPERIENCE
+Data Scientist, retail analytics firm (2 years)
+- Built demand forecasting models that reduced stockouts by 18 percent.
+- Automated retraining pipelines with Airflow and deployed on AWS SageMaker.
+- Mentored two junior analysts on SQL and feature engineering.
+
+PROJECTS
+- Customer churn prediction with gradient boosting and SHAP explainability.
+- Anomaly detection on sales data using autoencoders in TensorFlow.

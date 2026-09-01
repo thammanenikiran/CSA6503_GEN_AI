@@ -1,0 +1,26 @@
+PRIYA RAMESH
+B.E. Computer Science and Engineering, 2024 | CGPA 8.7
+Chennai | priya.ramesh@example.com
+
+PROFILE
+Machine learning enthusiast with two internships in applied AI. Comfortable taking
+a model from data preprocessing to a deployed REST API.
+
+SKILLS
+Python, machine learning, deep learning, PyTorch, TensorFlow, pandas, NumPy,
+scikit-learn, SQL, FastAPI, Git, Docker, AWS EC2 and S3, NLP, computer vision
+
+EXPERIENCE
+ML Intern, Zoho (6 months)
+- Built a text classification model for support tickets using transformers,
+  improving routing accuracy from 71 to 89 percent.
+- Served the model with FastAPI and deployed it on AWS with Docker.
+Data Science Intern, local analytics startup (3 months)
+- Cleaned and engineered features from 2 million rows using pandas and SQL.
+
+PROJECTS
+- Image captioning system using a CNN encoder and LSTM decoder in PyTorch.
+- Resume parser using spaCy NLP pipelines and regular expressions.
+
+CERTIFICATIONS
+Deep Learning Specialisation, TensorFlow Developer Certificate

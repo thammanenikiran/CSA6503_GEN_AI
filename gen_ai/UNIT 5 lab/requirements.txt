@@ -1,0 +1,15 @@
+# Unit 5 Lab — Local LLM experiments with Ollama
+# Install with:  pip install -r requirements.txt
+#
+# NOTE: These experiments also need the Ollama runtime itself (a separate
+# desktop app / service), not just these Python packages.
+#   1. Install Ollama .......... https://ollama.com/download
+#   2. Start it ................ ollama serve      (runs on http://localhost:11434)
+#   3. Pull the models ......... ollama pull llama3.2
+#                                ollama pull nomic-embed-text   (only for Exp 9)
+
+ollama>=0.3.0                # Python client for the local Ollama runtime
+streamlit>=1.30              # Web UI for Exp 1 and Exp 2
+chromadb>=0.5                # Vector database for the RAG experiments (Exp 9, 10)
+sentence-transformers>=2.2   # Local embeddings for Exp 10
+numpy>=1.23

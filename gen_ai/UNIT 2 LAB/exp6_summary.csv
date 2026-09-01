@@ -1,0 +1,4 @@
+strategy,category_accuracy,urgency_accuracy,sentiment_accuracy,valid_json_rate,mean_prompt_tokens,mean_completion_tokens,mean_latency_ms
+zero-shot,3/15,0/15,3/15,20.0,390.6,147.13,5807.89
+one-shot,5/15,3/15,6/15,40.0,363.33,135.93,9721.74
+few-shot,4/15,4/15,4/15,33.33,553.53,126.53,6028.15

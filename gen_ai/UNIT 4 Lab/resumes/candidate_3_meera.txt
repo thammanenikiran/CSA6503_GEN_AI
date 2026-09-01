@@ -1,0 +1,23 @@
+MEERA NATARAJAN
+B.Tech Artificial Intelligence and Data Science, 2025 | CGPA 9.2
+Madurai | meera.n@example.com
+
+PROFILE
+Final year AI student with strong fundamentals in machine learning and deep
+learning and a research publication in NLP.
+
+SKILLS
+Python, machine learning, deep learning, PyTorch, Hugging Face transformers,
+pandas, NumPy, SQL, Flask, NLP, Git, matplotlib, LangChain
+
+EXPERIENCE
+Research Assistant, college AI lab (1 year)
+- Fine tuned BERT for Tamil sentiment analysis, achieving 91 percent F1.
+- Published the work at a national conference on computational linguistics.
+AI Intern, healthtech startup (4 months)
+- Built a retrieval augmented question answering bot over clinical documents.
+- Exposed the pipeline through a Flask API used by the internal web app.
+
+PROJECTS
+- Speech to text transcription tool for classroom lectures using Whisper.
+- Text to image prompt explorer built with Stable Diffusion and Streamlit.

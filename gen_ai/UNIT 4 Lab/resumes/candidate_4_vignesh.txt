@@ -1,0 +1,22 @@
+VIGNESH RAJ
+B.E. Information Technology, 2024 | CGPA 7.6
+Trichy | vignesh.raj@example.com
+
+PROFILE
+Full stack web developer who builds and ships production web applications.
+
+SKILLS
+JavaScript, TypeScript, React, Node.js, Express, MongoDB, SQL, HTML, CSS,
+REST APIs, Git, Docker, AWS, Python basics
+
+EXPERIENCE
+Web Developer Intern, IT services company (6 months)
+- Built an internal dashboard in React consuming REST APIs from a Node backend.
+- Wrote SQL queries and optimised indexes that cut page load time by half.
+
+PROJECTS
+- E-commerce site with payment gateway integration and admin analytics.
+- Deployed a containerised chat application on AWS with CI via GitHub Actions.
+
+CERTIFICATIONS
+AWS Certified Cloud Practitioner

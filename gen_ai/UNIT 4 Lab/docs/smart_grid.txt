@@ -1,0 +1,81 @@
+Smart Grid Technology in Modern Power Systems
+
+The traditional electrical grid was designed for a one way flow of power, from
+large central generating stations through high voltage transmission lines, down
+through distribution substations, and finally to the consumer. Control was
+centralised, measurement was sparse, and faults were often detected only when a
+customer telephoned the utility to report an outage. Rising demand, the entry of
+renewable generation and the need for higher reliability have made this model
+inadequate.
+
+A smart grid is an electrical network that uses digital communication, sensing and
+automatic control to monitor and manage the transport of electricity from all
+generation sources to meet the varying demand of end users. The essential
+difference from the conventional grid is the two way flow of both power and
+information. A rooftop solar installation can export surplus energy back into the
+distribution feeder, and the utility can in turn send price signals or control
+commands to the consumer premises.
+
+The architecture of a smart grid is described in layers. The physical layer
+contains generators, transformers, transmission lines, circuit breakers and loads.
+The sensing layer consists of smart meters at consumer premises, phasor
+measurement units on transmission lines and intelligent electronic devices inside
+substations. Phasor measurement units sample voltage and current waveforms up to
+sixty times per second and time stamp each sample using a global positioning
+system clock, which allows the state of the entire grid to be observed in real
+time. The communication layer carries this data over fibre optic links, power line
+carrier communication, cellular networks and radio mesh networks. The application
+layer runs supervisory control and data acquisition systems, energy management
+systems, distribution management systems and outage management systems.
+
+Advanced metering infrastructure is often the first component a utility deploys. A
+smart meter records consumption every fifteen or thirty minutes and transmits the
+readings automatically. This eliminates manual meter reading, enables accurate time
+of use tariffs, and allows the utility to detect theft by comparing energy injected
+into a feeder with the sum of energy recorded by all meters on that feeder.
+Consumers benefit because they can see their own consumption pattern and shift
+flexible loads such as water heaters, washing machines and electric vehicle
+charging to off peak hours when tariffs are lower.
+
+Integration of renewable energy is the most demanding challenge the smart grid is
+designed to solve. Solar and wind generation are intermittent and are not
+dispatchable in the way a coal or gas plant is. Cloud cover can reduce the output
+of a solar farm by seventy percent within a few minutes. Because the grid must
+balance generation and demand instantaneously, a high share of renewable generation
+increases the need for fast acting reserves. Smart grids address this using
+forecasting algorithms based on satellite imagery and machine learning, battery
+energy storage systems that inject or absorb power within milliseconds, and demand
+response programmes in which large consumers reduce load on request.
+
+Self healing is another defining capability. In a conventional distribution network
+a fault causes an outage for every customer downstream of the protective device
+that operates, and restoration requires a crew to patrol the line. In a self
+healing network, fault passage indicators and automatic sectionalising switches
+identify the faulted section within seconds, isolate it, and reconfigure the
+network so that healthy sections are supplied from an alternative feeder. Typical
+restoration times fall from hours to under a minute.
+
+Cyber security is a serious concern because the connectivity that makes the grid
+intelligent also creates an attack surface. A compromised smart meter network could
+be used to issue mass disconnect commands, and a compromised substation controller
+could open circuit breakers and cause cascading failure. Defensive measures include
+strong mutual authentication between devices, encryption of all control traffic,
+segmentation of the operational technology network from the corporate information
+technology network, intrusion detection tuned to industrial protocols, and signed
+firmware update procedures.
+
+Economic and regulatory factors decide how quickly smart grids are adopted. The
+capital cost of metering infrastructure, communication networks and automation
+equipment is very high, and many utilities operate under tariffs that do not reward
+efficiency improvements. Interoperability is also incomplete because equipment from
+different vendors implements different communication standards. Standards such as
+IEC 61850 for substation automation, IEEE 2030 for interoperability and the common
+information model of IEC 61970 are steadily reducing this fragmentation.
+
+Looking ahead, the distribution network is expected to evolve into interconnected
+microgrids, each able to operate independently when the main grid fails. Electric
+vehicles will act as distributed storage through vehicle to grid technology.
+Artificial intelligence will move from forecasting into autonomous control,
+predicting equipment failure from vibration and thermal signatures and scheduling
+maintenance before a fault occurs. The result is a grid that is cleaner, more
+reliable, more efficient and far more observable than the one it replaces.

@@ -1,0 +1,23 @@
+test_number,message,gold_category,predicted_category,valid_json,latency_ms,raw_output,error
+1,My order was supposed to arrive yesterday but the tracking still says it is in transit.,DELIVERY_DELAY,DELIVERY_DELAY,1,7574.17,"{""category"":""DELIVERY_DELAY""}",
+2,I was charged twice for the same order. Please refund the extra payment.,PAYMENT_REFUND,UNIDENTIFIED,0,2129.19,,
+3,The headphones I received only work on one side.,PRODUCT_DEFECT,PRODUCT_DEFECT,1,2058.59,"{""category"":""PRODUCT_DEFECT""}",
+4,I forgot my password and the reset link is not reaching my email.,ACCOUNT_ACCESS,UNIDENTIFIED,0,8504.18,,
+5,"Great service, my package arrived earlier than expected!",FEEDBACK_OTHER,FEEDBACK_OTHER,1,2266.53,"{""category"":""FEEDBACK_OTHER""}",
+6,Where???,DELIVERY_DELAY,UNIDENTIFIED,0,1846.1,,
+7,Order 784521 is still not shipped and I need it before tomorrow's wedding.,DELIVERY_DELAY,DELIVERY_DELAY,0,787.03,"Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User wants me to classify a customer message into exactly one category.
+   - Categories: DELIVERY_DELAY, PAYMENT_REFUND, PRODUCT_DEFECT, ACCOUNT_ACCESS, FEEDBACK_OTHER.
+   - Output must be valid JSON with exactly `{""category"": ""CATEGORY_NAME""}`.
+   - No explanations, no markdown.
+   - The customer message: ""Order 78",
+8,Refund says completed nine days ago but the money is still missing from my bank account.,PAYMENT_REFUND,PAYMENT_REFUND,1,3271.85,"{""category"":""PAYMENT_REFUND""}",
+9,"Superb job guys, because obviously waiting three weeks for a phone is exactly what I wanted.",DELIVERY_DELAY,UNIDENTIFIED,0,2286.89,,
+10,Bhai payment ho gaya but order confirm nahi hua.,PAYMENT_REFUND,PAYMENT_REFUND,1,4893.85,"{""category"":""PAYMENT_REFUND""}",
+11,"The product looks nice, but the screen has a crack straight out of the box.",PRODUCT_DEFECT,UNIDENTIFIED,0,928.69,,
+12,Can you tell me whether this product is available in blue?,FEEDBACK_OTHER,UNIDENTIFIED,0,7455.46,,
+13,I cannot log into my account after changing my phone number.,ACCOUNT_ACCESS,UNIDENTIFIED,0,517.23,,
+14,The refund was processed and I can now see the money in my account. Thanks!,PAYMENT_REFUND,FEEDBACK_OTHER,0,1735.92,"The customer message states: ""The refund was processed and I can now see the money in my account. Thanks!"" This is a positive confirmation that a refund has been successfully completed. The customer is not reporting a problem; they are confirming resolution and thanking. This falls under general feedback or other, not a problem category. According to definitions, FEEDBACK_OTHER includes general feedback, questions, compliments, or issues that do not belong to the other four categories. This is a compliment/",
+15,My delivery is late and the box arrived damaged. The actual product seems okay.,DELIVERY_DELAY,PRODUCT_DEFECT,1,5122.17,"{""category"":""PRODUCT_DEFECT""}",

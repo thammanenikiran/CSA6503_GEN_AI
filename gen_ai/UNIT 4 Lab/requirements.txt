@@ -1,0 +1,34 @@
+# Unit 4 Lab - Multimodal Generative AI experiments (Hugging Face models)
+# Install with:  pip install -r requirements.txt
+#
+# All models are pre-trained and downloaded automatically on first run, and are
+# cached in ~/.cache/huggingface. A GPU is optional; everything also runs on CPU
+# (image generation and translation are simply slower).
+
+# --- core ---
+torch>=2.1                   # deep learning runtime for every model here
+transformers>=4.40           # chatbot, Whisper, SpeechT5, BART, NLLB pipelines
+sentencepiece>=0.1.99        # tokenizer needed by T5 / NLLB
+accelerate>=0.28             # faster and lower memory model loading
+
+# --- experiment 1 (Streamlit chatbot) ---
+streamlit>=1.30
+
+# --- experiment 2, 10 (TF-IDF retrieval and keyword extraction) ---
+scikit-learn>=1.3
+
+# --- experiments 3, 4 (text to image) ---
+diffusers>=0.27
+Pillow>=10.0
+
+# --- experiment 5 (speech to text) ---
+sounddevice>=0.4             # microphone recording (optional, file mode works without)
+scipy>=1.10                  # saving the recorded wav file
+librosa>=0.10                # audio decoding for file input
+
+# --- experiment 6 (text to speech) ---
+soundfile>=0.12
+datasets>=2.18               # speaker embedding vectors for SpeechT5
+
+# --- experiment 9 (resume screening) ---
+sentence-transformers>=2.6
