@@ -1,0 +1,1510 @@
+{
+  "summary": {
+    "model_name": "en_core_web_md",
+    "embedding_dim": 300,
+    "n_docs": 220,
+    "corpus_embedding_time_s": 2.7726,
+    "faiss": {
+      "index_time_ms": 0.4766,
+      "avg_query_latency_ms": 2.0635,
+      "p95_query_latency_ms": 2.9496,
+      "storage_bytes": 265850,
+      "avg_precision_at_5": 0.8
+    },
+    "chroma": {
+      "index_time_ms": 134.9088,
+      "avg_query_latency_ms": 1.2532,
+      "p95_query_latency_ms": 1.5463,
+      "storage_bytes": 1240420,
+      "avg_precision_at_5": 0.8
+    }
+  },
+  "per_query": {
+    "faiss": {
+      "q1": {
+        "query": "I'm interested in fintech and digital payments",
+        "top_k": [
+          {
+            "id": "alum_0136",
+            "score": 0.8383,
+            "name": "Aditya Venkatesh",
+            "domain": "fintech",
+            "company": "Stripe",
+            "role": "Data Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Aditya Venkatesh is a Data Scientist in the fintech space at Stripe, focused on digital payments infrastructure. A B.Tech EEE graduate (Class of 2016), Aditya enjoys mentoring students interested in digital payments, financial inclusion."
+          },
+          {
+            "id": "alum_0129",
+            "score": 0.8307,
+            "name": "Tara Raghavan",
+            "domain": "fintech",
+            "company": "PayU",
+            "role": "Data Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Tara Raghavan is a Data Scientist in the fintech space at PayU, focused on digital payments infrastructure. A B.Tech Mechanical graduate (Class of 2021), Tara enjoys mentoring students interested in financial inclusion, digital payments."
+          },
+          {
+            "id": "alum_0187",
+            "score": 0.8288,
+            "name": "Rahul Balan",
+            "domain": "fintech",
+            "company": "BillDesk",
+            "role": "Site Reliability Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Rahul Balan works as a Site Reliability Engineer at BillDesk, building fintech products used by millions of merchants. A B.Tech IT graduate (Class of 2008), Rahul enjoys mentoring students interested in fraud detection, digital payments."
+          },
+          {
+            "id": "alum_0047",
+            "score": 0.8244,
+            "name": "Saanvi Menon",
+            "domain": "fintech",
+            "company": "Paytm",
+            "role": "Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Saanvi Menon is a Product Manager in the fintech space at Paytm, focused on digital payments infrastructure. A MBA graduate (Class of 2008), Saanvi enjoys mentoring students interested in fraud detection, financial inclusion."
+          },
+          {
+            "id": "alum_0057",
+            "score": 0.8242,
+            "name": "Nikhil Verma",
+            "domain": "fintech",
+            "company": "Paytm",
+            "role": "Risk Analyst",
+            "explicit_domain_wording": false,
+            "bio": "Nikhil Verma works at Paytm as a Risk Analyst, building fraud-detection models for card and UPI transactions. A B.Tech CSE graduate (Class of 2022), Nikhil enjoys mentoring students interested in financial inclusion, fraud detection."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 3.2135
+      },
+      "q2": {
+        "query": "I want to work on machine learning and AI research",
+        "top_k": [
+          {
+            "id": "alum_0185",
+            "score": 0.8703,
+            "name": "Varun Das",
+            "domain": "data_ai",
+            "company": "Meta AI",
+            "role": "MLOps Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Varun Das is a MLOps Engineer at Meta AI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2020), Varun enjoys mentoring students interested in machine learning, deep learning."
+          },
+          {
+            "id": "alum_0003",
+            "score": 0.8661,
+            "name": "Ananya Pillai",
+            "domain": "data_ai",
+            "company": "OpenAI",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Ananya Pillai is a AI Researcher at OpenAI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2018), Ananya enjoys mentoring students interested in MLOps, computer vision."
+          },
+          {
+            "id": "alum_0152",
+            "score": 0.8608,
+            "name": "Arjun Sen",
+            "domain": "data_ai",
+            "company": "Hugging Face",
+            "role": "Machine Learning Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Arjun Sen is a Machine Learning Engineer at Hugging Face, working on artificial intelligence and machine learning research. A B.Tech EEE graduate (Class of 2007), Arjun enjoys mentoring students interested in machine learning, computer vision."
+          },
+          {
+            "id": "alum_0065",
+            "score": 0.8576,
+            "name": "Anjali Bose",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Anjali Bose is a AI Researcher at Databricks, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2019), Anjali enjoys mentoring students interested in NLP, computer vision."
+          },
+          {
+            "id": "alum_0043",
+            "score": 0.8537,
+            "name": "Krishna Das",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "Research Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Krishna Das is a Research Scientist at Databricks, working on artificial intelligence and machine learning research. A B.Tech IT graduate (Class of 2013), Krishna enjoys mentoring students interested in machine learning, deep learning."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 2.346
+      },
+      "q3": {
+        "query": "Interested in cloud computing and distributed backend systems",
+        "top_k": [
+          {
+            "id": "alum_0081",
+            "score": 0.8845,
+            "name": "Swathi Bose",
+            "domain": "core_software",
+            "company": "Atlassian",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": true,
+            "bio": "Swathi Bose is a Engineering Manager at Atlassian, working on core software infrastructure and cloud platforms. A B.Tech Mechanical graduate (Class of 2015), Swathi enjoys mentoring students interested in developer tools, distributed systems."
+          },
+          {
+            "id": "alum_0190",
+            "score": 0.8711,
+            "name": "Zara Balan",
+            "domain": "core_software",
+            "company": "Oracle",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": false,
+            "bio": "Zara Balan is a Engineering Manager at Oracle, optimising compiler toolchains and low-latency runtime systems. A B.Tech EEE graduate (Class of 2020), Zara enjoys mentoring students interested in backend engineering, cloud computing."
+          },
+          {
+            "id": "alum_0146",
+            "score": 0.8673,
+            "name": "Diya Iyer",
+            "domain": "core_software",
+            "company": "Amazon",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": true,
+            "bio": "Diya Iyer is a Engineering Manager at Amazon, working on core software infrastructure and cloud platforms. A MBA graduate (Class of 2015), Diya enjoys mentoring students interested in developer tools, cloud computing."
+          },
+          {
+            "id": "alum_0067",
+            "score": 0.8642,
+            "name": "Om Raghavan",
+            "domain": "core_software",
+            "company": "Amazon",
+            "role": "Software Development Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Om Raghavan works at Amazon as a Software Development Engineer, building distributed storage systems that scale to billions of requests. A B.Tech EEE graduate (Class of 2016), Om enjoys mentoring students interested in distributed systems, backend engineering."
+          },
+          {
+            "id": "alum_0088",
+            "score": 0.8631,
+            "name": "Arun Iyer",
+            "domain": "core_software",
+            "company": "Microsoft",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": false,
+            "bio": "Arun Iyer works at Microsoft as a Engineering Manager, building distributed storage systems that scale to billions of requests. A M.Sc Data Science graduate (Class of 2017), Arun enjoys mentoring students interested in distributed systems, cloud computing."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.9341
+      },
+      "q4": {
+        "query": "I'd like to get into management consulting and business strategy",
+        "top_k": [
+          {
+            "id": "alum_0176",
+            "score": 0.8567,
+            "name": "Rahul Mahesh",
+            "domain": "consulting",
+            "company": "McKinsey & Company",
+            "role": "Strategy Analyst",
+            "explicit_domain_wording": false,
+            "bio": "Rahul Mahesh is a Strategy Analyst at McKinsey & Company, running digital-transformation programmes for retail and telecom clients. A B.Tech IT graduate (Class of 2014), Rahul enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0158",
+            "score": 0.855,
+            "name": "Vivaan Iyer",
+            "domain": "consulting",
+            "company": "Bain & Company",
+            "role": "Management Consultant",
+            "explicit_domain_wording": true,
+            "bio": "Vivaan Iyer is a Management Consultant at Bain & Company, advising Fortune 500 clients on business strategy. A B.Tech Mechanical graduate (Class of 2018), Vivaan enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0045",
+            "score": 0.8519,
+            "name": "Saanvi Sharma",
+            "domain": "consulting",
+            "company": "EY",
+            "role": "Management Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Saanvi Sharma advises private-equity clients on due diligence and post-merger integration at EY. A B.Tech IT graduate (Class of 2020), Saanvi enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0193",
+            "score": 0.8515,
+            "name": "Swathi Rao",
+            "domain": "consulting",
+            "company": "Boston Consulting Group",
+            "role": "Strategy Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Swathi Rao is a Strategy Analyst at Boston Consulting Group, advising Fortune 500 clients on business strategy. A M.Sc Data Science graduate (Class of 2012), Swathi enjoys mentoring students interested in digital transformation, business strategy."
+          },
+          {
+            "id": "alum_0087",
+            "score": 0.8495,
+            "name": "Gopal Das",
+            "domain": "consulting",
+            "company": "Boston Consulting Group",
+            "role": "Engagement Manager",
+            "explicit_domain_wording": true,
+            "bio": "Gopal Das is a Engagement Manager at Boston Consulting Group, advising Fortune 500 clients on business strategy. A B.Tech IT graduate (Class of 2007), Gopal enjoys mentoring students interested in management consulting, digital transformation."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.9789
+      },
+      "q5": {
+        "query": "Passionate about renewable energy and sustainability",
+        "top_k": [
+          {
+            "id": "alum_0133",
+            "score": 0.8562,
+            "name": "Gopal Das",
+            "domain": "energy_climate",
+            "company": "Adani Green Energy",
+            "role": "Grid Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Gopal Das is a Grid Engineer at Adani Green Energy, designing solar-farm layouts and grid-integration studies. A M.Sc Data Science graduate (Class of 2021), Gopal enjoys mentoring students interested in sustainability, renewable energy."
+          },
+          {
+            "id": "alum_0086",
+            "score": 0.8557,
+            "name": "Kabir Iyer",
+            "domain": "energy_climate",
+            "company": "Adani Green Energy",
+            "role": "Grid Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Kabir Iyer works in renewable energy at Adani Green Energy as a Grid Engineer, driving the clean-energy transition. A B.Tech EEE graduate (Class of 2009), Kabir enjoys mentoring students interested in renewable energy, clean tech."
+          },
+          {
+            "id": "alum_0134",
+            "score": 0.8423,
+            "name": "Krishna Subramanian",
+            "domain": "energy_climate",
+            "company": "ReNew Power",
+            "role": "Grid Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Krishna Subramanian is a Grid Engineer at ReNew Power, designing solar-farm layouts and grid-integration studies. A MBA graduate (Class of 2005), Krishna enjoys mentoring students interested in sustainability, renewable energy."
+          },
+          {
+            "id": "alum_0001",
+            "score": 0.842,
+            "name": "Naveen Nair",
+            "domain": "energy_climate",
+            "company": "ONGC",
+            "role": "Sustainability Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Naveen Nair is a Sustainability Consultant at ONGC, designing solar-farm layouts and grid-integration studies. A B.Tech IT graduate (Class of 2020), Naveen enjoys mentoring students interested in clean tech, renewable energy."
+          },
+          {
+            "id": "alum_0062",
+            "score": 0.8282,
+            "name": "Sneha Verma",
+            "domain": "energy_climate",
+            "company": "ReNew Power",
+            "role": "Sustainability Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Sneha Verma is a Sustainability Consultant at ReNew Power, designing solar-farm layouts and grid-integration studies. A MBA graduate (Class of 2020), Sneha enjoys mentoring students interested in sustainability, clean tech."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.9805
+      },
+      "q6": {
+        "query": "Interested in cybersecurity and ethical hacking",
+        "top_k": [
+          {
+            "id": "alum_0052",
+            "score": 0.7538,
+            "name": "Manoj Sen",
+            "domain": "cybersecurity",
+            "company": "IBM Security",
+            "role": "Threat Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Manoj Sen works in cybersecurity at IBM Security as a Threat Analyst, protecting enterprise networks from threats. A B.Tech Mechanical graduate (Class of 2021), Manoj enjoys mentoring students interested in network security, threat intelligence."
+          },
+          {
+            "id": "alum_0018",
+            "score": 0.7398,
+            "name": "Akash Bose",
+            "domain": "cybersecurity",
+            "company": "CrowdStrike",
+            "role": "Security Architect",
+            "explicit_domain_wording": true,
+            "bio": "Akash Bose works in cybersecurity at CrowdStrike as a Security Architect, protecting enterprise networks from threats. A M.Sc Data Science graduate (Class of 2012), Akash enjoys mentoring students interested in penetration testing, threat intelligence."
+          },
+          {
+            "id": "alum_0201",
+            "score": 0.7383,
+            "name": "Raghav Mahesh",
+            "domain": "cybersecurity",
+            "company": "Fortinet",
+            "role": "Security Architect",
+            "explicit_domain_wording": false,
+            "bio": "Raghav Mahesh works at Fortinet as a Security Architect, building intrusion-detection and SOC automation tooling. A B.Tech Mechanical graduate (Class of 2015), Raghav enjoys mentoring students interested in threat intelligence, network security."
+          },
+          {
+            "id": "alum_0131",
+            "score": 0.7364,
+            "name": "Vikram Das",
+            "domain": "cybersecurity",
+            "company": "Palo Alto Networks",
+            "role": "Security Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Vikram Das works in cybersecurity at Palo Alto Networks as a Security Engineer, protecting enterprise networks from threats. A M.Sc Data Science graduate (Class of 2013), Vikram enjoys mentoring students interested in penetration testing, network security."
+          },
+          {
+            "id": "alum_0040",
+            "score": 0.7361,
+            "name": "Om Venkatesh",
+            "domain": "cybersecurity",
+            "company": "CrowdStrike",
+            "role": "Threat Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Om Venkatesh works in cybersecurity at CrowdStrike as a Threat Analyst, protecting enterprise networks from threats. A MBA graduate (Class of 2011), Om enjoys mentoring students interested in penetration testing, threat intelligence."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.8989
+      },
+      "q7": {
+        "query": "I want to build products in online education / edtech",
+        "top_k": [
+          {
+            "id": "alum_0102",
+            "score": 0.8356,
+            "name": "Rahul Iyer",
+            "domain": "edtech",
+            "company": "upGrad",
+            "role": "Content Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Rahul Iyer works in edtech at upGrad as a Content Product Manager, building online learning products. A B.Tech IT graduate (Class of 2016), Rahul enjoys mentoring students interested in online learning, ed-tech platforms."
+          },
+          {
+            "id": "alum_0214",
+            "score": 0.8303,
+            "name": "Saanvi Venkatesh",
+            "domain": "edtech",
+            "company": "BYJU'S",
+            "role": "Data Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Saanvi Venkatesh works in edtech at BYJU'S as a Data Analyst, building online learning products. A B.Tech ECE graduate (Class of 2015), Saanvi enjoys mentoring students interested in online learning, ed-tech platforms."
+          },
+          {
+            "id": "alum_0077",
+            "score": 0.8301,
+            "name": "Ishaan Sen",
+            "domain": "healthtech",
+            "company": "1mg",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Ishaan Sen is a Software Engineer at 1mg, building healthtech solutions for patient care. A B.Tech EEE graduate (Class of 2018), Ishaan enjoys mentoring students interested in digital health, patient data analytics."
+          },
+          {
+            "id": "alum_0142",
+            "score": 0.8299,
+            "name": "Vivaan Krishnan",
+            "domain": "edtech",
+            "company": "upGrad",
+            "role": "Data Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Vivaan Krishnan works in edtech at upGrad as a Data Analyst, building online learning products. A MBA graduate (Class of 2013), Vivaan enjoys mentoring students interested in ed-tech platforms, personalised education."
+          },
+          {
+            "id": "alum_0194",
+            "score": 0.8265,
+            "name": "Varun Pillai",
+            "domain": "fintech",
+            "company": "CRED",
+            "role": "Backend Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Varun Pillai is a Backend Engineer at CRED, designing high-throughput checkout and settlement systems for online merchants. A B.Tech IT graduate (Class of 2017), Varun enjoys mentoring students interested in lending platforms, fraud detection."
+          }
+        ],
+        "precision_at_5": 0.6,
+        "mean_latency_ms": 1.9129
+      },
+      "q8": {
+        "query": "Interested in supply chain and e-commerce logistics",
+        "top_k": [
+          {
+            "id": "alum_0209",
+            "score": 0.872,
+            "name": "Nisha Krishnan",
+            "domain": "ecommerce_logistics",
+            "company": "Amazon Retail",
+            "role": "Operations Manager",
+            "explicit_domain_wording": true,
+            "bio": "Nisha Krishnan works in e-commerce at Amazon Retail as a Operations Manager, running online retail operations. A MBA graduate (Class of 2016), Nisha enjoys mentoring students interested in supply chain, logistics tech."
+          },
+          {
+            "id": "alum_0199",
+            "score": 0.864,
+            "name": "Kabir Menon",
+            "domain": "ecommerce_logistics",
+            "company": "Amazon Retail",
+            "role": "Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Kabir Menon works in e-commerce at Amazon Retail as a Product Manager, running online retail operations. A B.Tech Mechanical graduate (Class of 2010), Kabir enjoys mentoring students interested in supply chain, quick commerce."
+          },
+          {
+            "id": "alum_0005",
+            "score": 0.8607,
+            "name": "Gopal Subramanian",
+            "domain": "ecommerce_logistics",
+            "company": "Amazon Retail",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Gopal Subramanian works in e-commerce at Amazon Retail as a Software Engineer, running online retail operations. A B.Tech CSE graduate (Class of 2007), Gopal enjoys mentoring students interested in logistics tech, supply chain."
+          },
+          {
+            "id": "alum_0182",
+            "score": 0.8601,
+            "name": "Krishna Sharma",
+            "domain": "ecommerce_logistics",
+            "company": "Delhivery",
+            "role": "Operations Manager",
+            "explicit_domain_wording": true,
+            "bio": "Krishna Sharma works in e-commerce at Delhivery as a Operations Manager, running online retail operations. A B.Tech EEE graduate (Class of 2022), Krishna enjoys mentoring students interested in online retail, supply chain."
+          },
+          {
+            "id": "alum_0037",
+            "score": 0.8575,
+            "name": "Varun Gupta",
+            "domain": "ecommerce_logistics",
+            "company": "Myntra",
+            "role": "Supply Chain Analyst",
+            "explicit_domain_wording": false,
+            "bio": "Varun Gupta works at Myntra as a Supply Chain Analyst, building demand-forecasting models for inventory planning. A B.Tech ECE graduate (Class of 2007), Varun enjoys mentoring students interested in supply chain, quick commerce."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.9478
+      },
+      "q9": {
+        "query": "I'm curious about digital health and healthtech startups",
+        "top_k": [
+          {
+            "id": "alum_0060",
+            "score": 0.8349,
+            "name": "Aarav Balan",
+            "domain": "healthtech",
+            "company": "Pfizer",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Aarav Balan is a Software Engineer at Pfizer, building healthtech solutions for patient care. A B.Tech EEE graduate (Class of 2009), Aarav enjoys mentoring students interested in medical imaging, digital health."
+          },
+          {
+            "id": "alum_0205",
+            "score": 0.8284,
+            "name": "Sai Raghavan",
+            "domain": "healthtech",
+            "company": "Pfizer",
+            "role": "Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Sai Raghavan is a Product Manager at Pfizer, building healthtech solutions for patient care. A B.Tech Mechanical graduate (Class of 2013), Sai enjoys mentoring students interested in patient data analytics, medical imaging."
+          },
+          {
+            "id": "alum_0065",
+            "score": 0.8277,
+            "name": "Anjali Bose",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Anjali Bose is a AI Researcher at Databricks, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2019), Anjali enjoys mentoring students interested in NLP, computer vision."
+          },
+          {
+            "id": "alum_0077",
+            "score": 0.827,
+            "name": "Ishaan Sen",
+            "domain": "healthtech",
+            "company": "1mg",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Ishaan Sen is a Software Engineer at 1mg, building healthtech solutions for patient care. A B.Tech EEE graduate (Class of 2018), Ishaan enjoys mentoring students interested in digital health, patient data analytics."
+          },
+          {
+            "id": "alum_0003",
+            "score": 0.8268,
+            "name": "Ananya Pillai",
+            "domain": "data_ai",
+            "company": "OpenAI",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Ananya Pillai is a AI Researcher at OpenAI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2018), Ananya enjoys mentoring students interested in MLOps, computer vision."
+          }
+        ],
+        "precision_at_5": 0.6,
+        "mean_latency_ms": 1.9279
+      },
+      "q10": {
+        "query": "Interested in mechanical design and core engineering roles",
+        "top_k": [
+          {
+            "id": "alum_0206",
+            "score": 0.8824,
+            "name": "Reyansh Chandran",
+            "domain": "core_engineering",
+            "company": "BHEL",
+            "role": "R&D Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Reyansh Chandran is a R&D Engineer at BHEL, working in core mechanical and industrial engineering. A B.Tech ECE graduate (Class of 2011), Reyansh enjoys mentoring students interested in automotive engineering, mechanical design."
+          },
+          {
+            "id": "alum_0026",
+            "score": 0.8799,
+            "name": "Karthik Bose",
+            "domain": "core_engineering",
+            "company": "Tata Motors",
+            "role": "Design Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Karthik Bose is a Design Engineer at Tata Motors, working in core mechanical and industrial engineering. A B.Tech IT graduate (Class of 2017), Karthik enjoys mentoring students interested in automotive engineering, robotics."
+          },
+          {
+            "id": "alum_0030",
+            "score": 0.8705,
+            "name": "Bhavana Das",
+            "domain": "core_engineering",
+            "company": "Mahindra & Mahindra",
+            "role": "Manufacturing Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Bhavana Das is a Manufacturing Engineer at Mahindra & Mahindra, working in core mechanical and industrial engineering. A B.Tech IT graduate (Class of 2019), Bhavana enjoys mentoring students interested in automotive engineering, mechanical design."
+          },
+          {
+            "id": "alum_0081",
+            "score": 0.8648,
+            "name": "Swathi Bose",
+            "domain": "core_software",
+            "company": "Atlassian",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": true,
+            "bio": "Swathi Bose is a Engineering Manager at Atlassian, working on core software infrastructure and cloud platforms. A B.Tech Mechanical graduate (Class of 2015), Swathi enjoys mentoring students interested in developer tools, distributed systems."
+          },
+          {
+            "id": "alum_0078",
+            "score": 0.8547,
+            "name": "Aarav Gupta",
+            "domain": "core_engineering",
+            "company": "GE Aerospace",
+            "role": "Project Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Aarav Gupta designs turbine components and thermal systems at GE Aerospace as a Project Engineer. A B.Tech Mechanical graduate (Class of 2013), Aarav enjoys mentoring students interested in mechanical design, robotics."
+          }
+        ],
+        "precision_at_5": 0.8,
+        "mean_latency_ms": 1.8896
+      },
+      "q11": {
+        "query": "I want to pursue academic research and a PhD",
+        "top_k": [
+          {
+            "id": "alum_0166",
+            "score": 0.8809,
+            "name": "Aryan Sharma",
+            "domain": "academia_research",
+            "company": "Stanford University",
+            "role": "PhD Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Aryan Sharma is an PhD Researcher at Stanford University, researching applied mathematics and academic theory. A B.Tech Mechanical graduate (Class of 2015), Aryan enjoys mentoring students interested in applied research, academia."
+          },
+          {
+            "id": "alum_0065",
+            "score": 0.8702,
+            "name": "Anjali Bose",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Anjali Bose is a AI Researcher at Databricks, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2019), Anjali enjoys mentoring students interested in NLP, computer vision."
+          },
+          {
+            "id": "alum_0003",
+            "score": 0.8697,
+            "name": "Ananya Pillai",
+            "domain": "data_ai",
+            "company": "OpenAI",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Ananya Pillai is a AI Researcher at OpenAI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2018), Ananya enjoys mentoring students interested in MLOps, computer vision."
+          },
+          {
+            "id": "alum_0163",
+            "score": 0.8643,
+            "name": "Akash Venkatesh",
+            "domain": "academia_research",
+            "company": "Stanford University",
+            "role": "Research Associate",
+            "explicit_domain_wording": true,
+            "bio": "Akash Venkatesh is an Research Associate at Stanford University, researching applied mathematics and academic theory. A B.Tech IT graduate (Class of 2018), Akash enjoys mentoring students interested in applied research, signal processing."
+          },
+          {
+            "id": "alum_0025",
+            "score": 0.859,
+            "name": "Akash Menon",
+            "domain": "data_ai",
+            "company": "Hugging Face",
+            "role": "MLOps Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Akash Menon is a MLOps Engineer at Hugging Face, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2014), Akash enjoys mentoring students interested in computer vision, MLOps."
+          }
+        ],
+        "precision_at_5": 0.4,
+        "mean_latency_ms": 1.9317
+      },
+      "q12": {
+        "query": "Interested in brand strategy and digital marketing careers",
+        "top_k": [
+          {
+            "id": "alum_0153",
+            "score": 0.878,
+            "name": "Tara Mahesh",
+            "domain": "marketing_media",
+            "company": "Netflix",
+            "role": "Product Marketing Manager",
+            "explicit_domain_wording": true,
+            "bio": "Tara Mahesh works in digital marketing at Netflix as a Product Marketing Manager, running brand campaigns. A M.Tech CSE graduate (Class of 2008), Tara enjoys mentoring students interested in digital marketing, brand strategy."
+          },
+          {
+            "id": "alum_0154",
+            "score": 0.8777,
+            "name": "Saanvi Venkatesh",
+            "domain": "marketing_media",
+            "company": "WPP",
+            "role": "Growth Marketer",
+            "explicit_domain_wording": true,
+            "bio": "Saanvi Venkatesh works in digital marketing at WPP as a Growth Marketer, running brand campaigns. A M.Tech CSE graduate (Class of 2017), Saanvi enjoys mentoring students interested in digital marketing, content strategy."
+          },
+          {
+            "id": "alum_0164",
+            "score": 0.8774,
+            "name": "Gopal Das",
+            "domain": "marketing_media",
+            "company": "WPP",
+            "role": "Brand Manager",
+            "explicit_domain_wording": true,
+            "bio": "Gopal Das works in digital marketing at WPP as a Brand Manager, running brand campaigns. A M.Tech CSE graduate (Class of 2020), Gopal enjoys mentoring students interested in brand strategy, digital marketing."
+          },
+          {
+            "id": "alum_0169",
+            "score": 0.8715,
+            "name": "Arun Menon",
+            "domain": "consulting",
+            "company": "McKinsey & Company",
+            "role": "Engagement Manager",
+            "explicit_domain_wording": false,
+            "bio": "Arun Menon is a Engagement Manager at McKinsey & Company, running digital-transformation programmes for retail and telecom clients. A M.Tech CSE graduate (Class of 2015), Arun enjoys mentoring students interested in digital transformation, business strategy."
+          },
+          {
+            "id": "alum_0167",
+            "score": 0.8693,
+            "name": "Lakshmi Iyer",
+            "domain": "consulting",
+            "company": "Boston Consulting Group",
+            "role": "Associate Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Lakshmi Iyer is a Associate Consultant at Boston Consulting Group, running digital-transformation programmes for retail and telecom clients. A M.Sc Data Science graduate (Class of 2008), Lakshmi enjoys mentoring students interested in business strategy, digital transformation."
+          }
+        ],
+        "precision_at_5": 0.6,
+        "mean_latency_ms": 1.9733
+      },
+      "q_special": {
+        "query": "Looking for an alumnus in fintech to guide me",
+        "top_k": [
+          {
+            "id": "alum_0148",
+            "score": 0.8645,
+            "name": "Kavya Suresh",
+            "domain": "ecommerce_logistics",
+            "company": "Flipkart",
+            "role": "Software Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Kavya Suresh works at Flipkart as a Software Engineer, building demand-forecasting models for inventory planning. A B.Tech IT graduate (Class of 2020), Kavya enjoys mentoring students interested in supply chain, quick commerce."
+          },
+          {
+            "id": "alum_0158",
+            "score": 0.8632,
+            "name": "Vivaan Iyer",
+            "domain": "consulting",
+            "company": "Bain & Company",
+            "role": "Management Consultant",
+            "explicit_domain_wording": true,
+            "bio": "Vivaan Iyer is a Management Consultant at Bain & Company, advising Fortune 500 clients on business strategy. A B.Tech Mechanical graduate (Class of 2018), Vivaan enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0187",
+            "score": 0.8617,
+            "name": "Rahul Balan",
+            "domain": "fintech",
+            "company": "BillDesk",
+            "role": "Site Reliability Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Rahul Balan works as a Site Reliability Engineer at BillDesk, building fintech products used by millions of merchants. A B.Tech IT graduate (Class of 2008), Rahul enjoys mentoring students interested in fraud detection, digital payments."
+          },
+          {
+            "id": "alum_0069",
+            "score": 0.8607,
+            "name": "Siddharth Menon",
+            "domain": "consulting",
+            "company": "Deloitte",
+            "role": "Associate Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Siddharth Menon is a Associate Consultant at Deloitte, running digital-transformation programmes for retail and telecom clients. A M.Sc Data Science graduate (Class of 2018), Siddharth enjoys mentoring students interested in management consulting, business strategy."
+          },
+          {
+            "id": "alum_0178",
+            "score": 0.8594,
+            "name": "Meera Iyer",
+            "domain": "fintech",
+            "company": "Visa",
+            "role": "Data Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Meera Iyer works as a Data Scientist at Visa, building fintech products used by millions of merchants. A B.Tech EEE graduate (Class of 2015), Meera enjoys mentoring students interested in lending platforms, financial inclusion."
+          }
+        ],
+        "precision_at_5": 0.4,
+        "mean_latency_ms": 1.8903
+      }
+    },
+    "chroma": {
+      "q1": {
+        "query": "I'm interested in fintech and digital payments",
+        "top_k": [
+          {
+            "id": "alum_0136",
+            "score": 0.8383,
+            "name": "Aditya Venkatesh",
+            "domain": "fintech",
+            "company": "Stripe",
+            "role": "Data Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Aditya Venkatesh is a Data Scientist in the fintech space at Stripe, focused on digital payments infrastructure. A B.Tech EEE graduate (Class of 2016), Aditya enjoys mentoring students interested in digital payments, financial inclusion."
+          },
+          {
+            "id": "alum_0129",
+            "score": 0.8307,
+            "name": "Tara Raghavan",
+            "domain": "fintech",
+            "company": "PayU",
+            "role": "Data Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Tara Raghavan is a Data Scientist in the fintech space at PayU, focused on digital payments infrastructure. A B.Tech Mechanical graduate (Class of 2021), Tara enjoys mentoring students interested in financial inclusion, digital payments."
+          },
+          {
+            "id": "alum_0187",
+            "score": 0.8288,
+            "name": "Rahul Balan",
+            "domain": "fintech",
+            "company": "BillDesk",
+            "role": "Site Reliability Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Rahul Balan works as a Site Reliability Engineer at BillDesk, building fintech products used by millions of merchants. A B.Tech IT graduate (Class of 2008), Rahul enjoys mentoring students interested in fraud detection, digital payments."
+          },
+          {
+            "id": "alum_0047",
+            "score": 0.8244,
+            "name": "Saanvi Menon",
+            "domain": "fintech",
+            "company": "Paytm",
+            "role": "Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Saanvi Menon is a Product Manager in the fintech space at Paytm, focused on digital payments infrastructure. A MBA graduate (Class of 2008), Saanvi enjoys mentoring students interested in fraud detection, financial inclusion."
+          },
+          {
+            "id": "alum_0057",
+            "score": 0.8242,
+            "name": "Nikhil Verma",
+            "domain": "fintech",
+            "company": "Paytm",
+            "role": "Risk Analyst",
+            "explicit_domain_wording": false,
+            "bio": "Nikhil Verma works at Paytm as a Risk Analyst, building fraud-detection models for card and UPI transactions. A B.Tech CSE graduate (Class of 2022), Nikhil enjoys mentoring students interested in financial inclusion, fraud detection."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.4298
+      },
+      "q2": {
+        "query": "I want to work on machine learning and AI research",
+        "top_k": [
+          {
+            "id": "alum_0185",
+            "score": 0.8703,
+            "name": "Varun Das",
+            "domain": "data_ai",
+            "company": "Meta AI",
+            "role": "MLOps Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Varun Das is a MLOps Engineer at Meta AI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2020), Varun enjoys mentoring students interested in machine learning, deep learning."
+          },
+          {
+            "id": "alum_0003",
+            "score": 0.8661,
+            "name": "Ananya Pillai",
+            "domain": "data_ai",
+            "company": "OpenAI",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Ananya Pillai is a AI Researcher at OpenAI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2018), Ananya enjoys mentoring students interested in MLOps, computer vision."
+          },
+          {
+            "id": "alum_0152",
+            "score": 0.8608,
+            "name": "Arjun Sen",
+            "domain": "data_ai",
+            "company": "Hugging Face",
+            "role": "Machine Learning Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Arjun Sen is a Machine Learning Engineer at Hugging Face, working on artificial intelligence and machine learning research. A B.Tech EEE graduate (Class of 2007), Arjun enjoys mentoring students interested in machine learning, computer vision."
+          },
+          {
+            "id": "alum_0065",
+            "score": 0.8576,
+            "name": "Anjali Bose",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Anjali Bose is a AI Researcher at Databricks, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2019), Anjali enjoys mentoring students interested in NLP, computer vision."
+          },
+          {
+            "id": "alum_0043",
+            "score": 0.8537,
+            "name": "Krishna Das",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "Research Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Krishna Das is a Research Scientist at Databricks, working on artificial intelligence and machine learning research. A B.Tech IT graduate (Class of 2013), Krishna enjoys mentoring students interested in machine learning, deep learning."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.3887
+      },
+      "q3": {
+        "query": "Interested in cloud computing and distributed backend systems",
+        "top_k": [
+          {
+            "id": "alum_0081",
+            "score": 0.8845,
+            "name": "Swathi Bose",
+            "domain": "core_software",
+            "company": "Atlassian",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": true,
+            "bio": "Swathi Bose is a Engineering Manager at Atlassian, working on core software infrastructure and cloud platforms. A B.Tech Mechanical graduate (Class of 2015), Swathi enjoys mentoring students interested in developer tools, distributed systems."
+          },
+          {
+            "id": "alum_0190",
+            "score": 0.8711,
+            "name": "Zara Balan",
+            "domain": "core_software",
+            "company": "Oracle",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": false,
+            "bio": "Zara Balan is a Engineering Manager at Oracle, optimising compiler toolchains and low-latency runtime systems. A B.Tech EEE graduate (Class of 2020), Zara enjoys mentoring students interested in backend engineering, cloud computing."
+          },
+          {
+            "id": "alum_0146",
+            "score": 0.8673,
+            "name": "Diya Iyer",
+            "domain": "core_software",
+            "company": "Amazon",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": true,
+            "bio": "Diya Iyer is a Engineering Manager at Amazon, working on core software infrastructure and cloud platforms. A MBA graduate (Class of 2015), Diya enjoys mentoring students interested in developer tools, cloud computing."
+          },
+          {
+            "id": "alum_0067",
+            "score": 0.8642,
+            "name": "Om Raghavan",
+            "domain": "core_software",
+            "company": "Amazon",
+            "role": "Software Development Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Om Raghavan works at Amazon as a Software Development Engineer, building distributed storage systems that scale to billions of requests. A B.Tech EEE graduate (Class of 2016), Om enjoys mentoring students interested in distributed systems, backend engineering."
+          },
+          {
+            "id": "alum_0088",
+            "score": 0.8631,
+            "name": "Arun Iyer",
+            "domain": "core_software",
+            "company": "Microsoft",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": false,
+            "bio": "Arun Iyer works at Microsoft as a Engineering Manager, building distributed storage systems that scale to billions of requests. A M.Sc Data Science graduate (Class of 2017), Arun enjoys mentoring students interested in distributed systems, cloud computing."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.3398
+      },
+      "q4": {
+        "query": "I'd like to get into management consulting and business strategy",
+        "top_k": [
+          {
+            "id": "alum_0176",
+            "score": 0.8567,
+            "name": "Rahul Mahesh",
+            "domain": "consulting",
+            "company": "McKinsey & Company",
+            "role": "Strategy Analyst",
+            "explicit_domain_wording": false,
+            "bio": "Rahul Mahesh is a Strategy Analyst at McKinsey & Company, running digital-transformation programmes for retail and telecom clients. A B.Tech IT graduate (Class of 2014), Rahul enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0158",
+            "score": 0.855,
+            "name": "Vivaan Iyer",
+            "domain": "consulting",
+            "company": "Bain & Company",
+            "role": "Management Consultant",
+            "explicit_domain_wording": true,
+            "bio": "Vivaan Iyer is a Management Consultant at Bain & Company, advising Fortune 500 clients on business strategy. A B.Tech Mechanical graduate (Class of 2018), Vivaan enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0045",
+            "score": 0.8519,
+            "name": "Saanvi Sharma",
+            "domain": "consulting",
+            "company": "EY",
+            "role": "Management Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Saanvi Sharma advises private-equity clients on due diligence and post-merger integration at EY. A B.Tech IT graduate (Class of 2020), Saanvi enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0193",
+            "score": 0.8515,
+            "name": "Swathi Rao",
+            "domain": "consulting",
+            "company": "Boston Consulting Group",
+            "role": "Strategy Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Swathi Rao is a Strategy Analyst at Boston Consulting Group, advising Fortune 500 clients on business strategy. A M.Sc Data Science graduate (Class of 2012), Swathi enjoys mentoring students interested in digital transformation, business strategy."
+          },
+          {
+            "id": "alum_0087",
+            "score": 0.8495,
+            "name": "Gopal Das",
+            "domain": "consulting",
+            "company": "Boston Consulting Group",
+            "role": "Engagement Manager",
+            "explicit_domain_wording": true,
+            "bio": "Gopal Das is a Engagement Manager at Boston Consulting Group, advising Fortune 500 clients on business strategy. A B.Tech IT graduate (Class of 2007), Gopal enjoys mentoring students interested in management consulting, digital transformation."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.3409
+      },
+      "q5": {
+        "query": "Passionate about renewable energy and sustainability",
+        "top_k": [
+          {
+            "id": "alum_0133",
+            "score": 0.8562,
+            "name": "Gopal Das",
+            "domain": "energy_climate",
+            "company": "Adani Green Energy",
+            "role": "Grid Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Gopal Das is a Grid Engineer at Adani Green Energy, designing solar-farm layouts and grid-integration studies. A M.Sc Data Science graduate (Class of 2021), Gopal enjoys mentoring students interested in sustainability, renewable energy."
+          },
+          {
+            "id": "alum_0086",
+            "score": 0.8557,
+            "name": "Kabir Iyer",
+            "domain": "energy_climate",
+            "company": "Adani Green Energy",
+            "role": "Grid Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Kabir Iyer works in renewable energy at Adani Green Energy as a Grid Engineer, driving the clean-energy transition. A B.Tech EEE graduate (Class of 2009), Kabir enjoys mentoring students interested in renewable energy, clean tech."
+          },
+          {
+            "id": "alum_0134",
+            "score": 0.8423,
+            "name": "Krishna Subramanian",
+            "domain": "energy_climate",
+            "company": "ReNew Power",
+            "role": "Grid Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Krishna Subramanian is a Grid Engineer at ReNew Power, designing solar-farm layouts and grid-integration studies. A MBA graduate (Class of 2005), Krishna enjoys mentoring students interested in sustainability, renewable energy."
+          },
+          {
+            "id": "alum_0001",
+            "score": 0.842,
+            "name": "Naveen Nair",
+            "domain": "energy_climate",
+            "company": "ONGC",
+            "role": "Sustainability Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Naveen Nair is a Sustainability Consultant at ONGC, designing solar-farm layouts and grid-integration studies. A B.Tech IT graduate (Class of 2020), Naveen enjoys mentoring students interested in clean tech, renewable energy."
+          },
+          {
+            "id": "alum_0062",
+            "score": 0.8282,
+            "name": "Sneha Verma",
+            "domain": "energy_climate",
+            "company": "ReNew Power",
+            "role": "Sustainability Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Sneha Verma is a Sustainability Consultant at ReNew Power, designing solar-farm layouts and grid-integration studies. A MBA graduate (Class of 2020), Sneha enjoys mentoring students interested in sustainability, clean tech."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.3096
+      },
+      "q6": {
+        "query": "Interested in cybersecurity and ethical hacking",
+        "top_k": [
+          {
+            "id": "alum_0052",
+            "score": 0.7538,
+            "name": "Manoj Sen",
+            "domain": "cybersecurity",
+            "company": "IBM Security",
+            "role": "Threat Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Manoj Sen works in cybersecurity at IBM Security as a Threat Analyst, protecting enterprise networks from threats. A B.Tech Mechanical graduate (Class of 2021), Manoj enjoys mentoring students interested in network security, threat intelligence."
+          },
+          {
+            "id": "alum_0018",
+            "score": 0.7398,
+            "name": "Akash Bose",
+            "domain": "cybersecurity",
+            "company": "CrowdStrike",
+            "role": "Security Architect",
+            "explicit_domain_wording": true,
+            "bio": "Akash Bose works in cybersecurity at CrowdStrike as a Security Architect, protecting enterprise networks from threats. A M.Sc Data Science graduate (Class of 2012), Akash enjoys mentoring students interested in penetration testing, threat intelligence."
+          },
+          {
+            "id": "alum_0201",
+            "score": 0.7383,
+            "name": "Raghav Mahesh",
+            "domain": "cybersecurity",
+            "company": "Fortinet",
+            "role": "Security Architect",
+            "explicit_domain_wording": false,
+            "bio": "Raghav Mahesh works at Fortinet as a Security Architect, building intrusion-detection and SOC automation tooling. A B.Tech Mechanical graduate (Class of 2015), Raghav enjoys mentoring students interested in threat intelligence, network security."
+          },
+          {
+            "id": "alum_0131",
+            "score": 0.7364,
+            "name": "Vikram Das",
+            "domain": "cybersecurity",
+            "company": "Palo Alto Networks",
+            "role": "Security Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Vikram Das works in cybersecurity at Palo Alto Networks as a Security Engineer, protecting enterprise networks from threats. A M.Sc Data Science graduate (Class of 2013), Vikram enjoys mentoring students interested in penetration testing, network security."
+          },
+          {
+            "id": "alum_0040",
+            "score": 0.7361,
+            "name": "Om Venkatesh",
+            "domain": "cybersecurity",
+            "company": "CrowdStrike",
+            "role": "Threat Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Om Venkatesh works in cybersecurity at CrowdStrike as a Threat Analyst, protecting enterprise networks from threats. A MBA graduate (Class of 2011), Om enjoys mentoring students interested in penetration testing, threat intelligence."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.3194
+      },
+      "q7": {
+        "query": "I want to build products in online education / edtech",
+        "top_k": [
+          {
+            "id": "alum_0102",
+            "score": 0.8356,
+            "name": "Rahul Iyer",
+            "domain": "edtech",
+            "company": "upGrad",
+            "role": "Content Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Rahul Iyer works in edtech at upGrad as a Content Product Manager, building online learning products. A B.Tech IT graduate (Class of 2016), Rahul enjoys mentoring students interested in online learning, ed-tech platforms."
+          },
+          {
+            "id": "alum_0214",
+            "score": 0.8303,
+            "name": "Saanvi Venkatesh",
+            "domain": "edtech",
+            "company": "BYJU'S",
+            "role": "Data Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Saanvi Venkatesh works in edtech at BYJU'S as a Data Analyst, building online learning products. A B.Tech ECE graduate (Class of 2015), Saanvi enjoys mentoring students interested in online learning, ed-tech platforms."
+          },
+          {
+            "id": "alum_0077",
+            "score": 0.8301,
+            "name": "Ishaan Sen",
+            "domain": "healthtech",
+            "company": "1mg",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Ishaan Sen is a Software Engineer at 1mg, building healthtech solutions for patient care. A B.Tech EEE graduate (Class of 2018), Ishaan enjoys mentoring students interested in digital health, patient data analytics."
+          },
+          {
+            "id": "alum_0142",
+            "score": 0.8299,
+            "name": "Vivaan Krishnan",
+            "domain": "edtech",
+            "company": "upGrad",
+            "role": "Data Analyst",
+            "explicit_domain_wording": true,
+            "bio": "Vivaan Krishnan works in edtech at upGrad as a Data Analyst, building online learning products. A MBA graduate (Class of 2013), Vivaan enjoys mentoring students interested in ed-tech platforms, personalised education."
+          },
+          {
+            "id": "alum_0194",
+            "score": 0.8265,
+            "name": "Varun Pillai",
+            "domain": "fintech",
+            "company": "CRED",
+            "role": "Backend Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Varun Pillai is a Backend Engineer at CRED, designing high-throughput checkout and settlement systems for online merchants. A B.Tech IT graduate (Class of 2017), Varun enjoys mentoring students interested in lending platforms, fraud detection."
+          }
+        ],
+        "precision_at_5": 0.6,
+        "mean_latency_ms": 1.1865
+      },
+      "q8": {
+        "query": "Interested in supply chain and e-commerce logistics",
+        "top_k": [
+          {
+            "id": "alum_0209",
+            "score": 0.872,
+            "name": "Nisha Krishnan",
+            "domain": "ecommerce_logistics",
+            "company": "Amazon Retail",
+            "role": "Operations Manager",
+            "explicit_domain_wording": true,
+            "bio": "Nisha Krishnan works in e-commerce at Amazon Retail as a Operations Manager, running online retail operations. A MBA graduate (Class of 2016), Nisha enjoys mentoring students interested in supply chain, logistics tech."
+          },
+          {
+            "id": "alum_0199",
+            "score": 0.864,
+            "name": "Kabir Menon",
+            "domain": "ecommerce_logistics",
+            "company": "Amazon Retail",
+            "role": "Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Kabir Menon works in e-commerce at Amazon Retail as a Product Manager, running online retail operations. A B.Tech Mechanical graduate (Class of 2010), Kabir enjoys mentoring students interested in supply chain, quick commerce."
+          },
+          {
+            "id": "alum_0005",
+            "score": 0.8607,
+            "name": "Gopal Subramanian",
+            "domain": "ecommerce_logistics",
+            "company": "Amazon Retail",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Gopal Subramanian works in e-commerce at Amazon Retail as a Software Engineer, running online retail operations. A B.Tech CSE graduate (Class of 2007), Gopal enjoys mentoring students interested in logistics tech, supply chain."
+          },
+          {
+            "id": "alum_0182",
+            "score": 0.8601,
+            "name": "Krishna Sharma",
+            "domain": "ecommerce_logistics",
+            "company": "Delhivery",
+            "role": "Operations Manager",
+            "explicit_domain_wording": true,
+            "bio": "Krishna Sharma works in e-commerce at Delhivery as a Operations Manager, running online retail operations. A B.Tech EEE graduate (Class of 2022), Krishna enjoys mentoring students interested in online retail, supply chain."
+          },
+          {
+            "id": "alum_0037",
+            "score": 0.8575,
+            "name": "Varun Gupta",
+            "domain": "ecommerce_logistics",
+            "company": "Myntra",
+            "role": "Supply Chain Analyst",
+            "explicit_domain_wording": false,
+            "bio": "Varun Gupta works at Myntra as a Supply Chain Analyst, building demand-forecasting models for inventory planning. A B.Tech ECE graduate (Class of 2007), Varun enjoys mentoring students interested in supply chain, quick commerce."
+          }
+        ],
+        "precision_at_5": 1.0,
+        "mean_latency_ms": 1.1523
+      },
+      "q9": {
+        "query": "I'm curious about digital health and healthtech startups",
+        "top_k": [
+          {
+            "id": "alum_0060",
+            "score": 0.8349,
+            "name": "Aarav Balan",
+            "domain": "healthtech",
+            "company": "Pfizer",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Aarav Balan is a Software Engineer at Pfizer, building healthtech solutions for patient care. A B.Tech EEE graduate (Class of 2009), Aarav enjoys mentoring students interested in medical imaging, digital health."
+          },
+          {
+            "id": "alum_0205",
+            "score": 0.8284,
+            "name": "Sai Raghavan",
+            "domain": "healthtech",
+            "company": "Pfizer",
+            "role": "Product Manager",
+            "explicit_domain_wording": true,
+            "bio": "Sai Raghavan is a Product Manager at Pfizer, building healthtech solutions for patient care. A B.Tech Mechanical graduate (Class of 2013), Sai enjoys mentoring students interested in patient data analytics, medical imaging."
+          },
+          {
+            "id": "alum_0065",
+            "score": 0.8277,
+            "name": "Anjali Bose",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Anjali Bose is a AI Researcher at Databricks, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2019), Anjali enjoys mentoring students interested in NLP, computer vision."
+          },
+          {
+            "id": "alum_0077",
+            "score": 0.827,
+            "name": "Ishaan Sen",
+            "domain": "healthtech",
+            "company": "1mg",
+            "role": "Software Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Ishaan Sen is a Software Engineer at 1mg, building healthtech solutions for patient care. A B.Tech EEE graduate (Class of 2018), Ishaan enjoys mentoring students interested in digital health, patient data analytics."
+          },
+          {
+            "id": "alum_0003",
+            "score": 0.8268,
+            "name": "Ananya Pillai",
+            "domain": "data_ai",
+            "company": "OpenAI",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Ananya Pillai is a AI Researcher at OpenAI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2018), Ananya enjoys mentoring students interested in MLOps, computer vision."
+          }
+        ],
+        "precision_at_5": 0.6,
+        "mean_latency_ms": 1.1472
+      },
+      "q10": {
+        "query": "Interested in mechanical design and core engineering roles",
+        "top_k": [
+          {
+            "id": "alum_0206",
+            "score": 0.8824,
+            "name": "Reyansh Chandran",
+            "domain": "core_engineering",
+            "company": "BHEL",
+            "role": "R&D Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Reyansh Chandran is a R&D Engineer at BHEL, working in core mechanical and industrial engineering. A B.Tech ECE graduate (Class of 2011), Reyansh enjoys mentoring students interested in automotive engineering, mechanical design."
+          },
+          {
+            "id": "alum_0026",
+            "score": 0.8799,
+            "name": "Karthik Bose",
+            "domain": "core_engineering",
+            "company": "Tata Motors",
+            "role": "Design Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Karthik Bose is a Design Engineer at Tata Motors, working in core mechanical and industrial engineering. A B.Tech IT graduate (Class of 2017), Karthik enjoys mentoring students interested in automotive engineering, robotics."
+          },
+          {
+            "id": "alum_0030",
+            "score": 0.8705,
+            "name": "Bhavana Das",
+            "domain": "core_engineering",
+            "company": "Mahindra & Mahindra",
+            "role": "Manufacturing Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Bhavana Das is a Manufacturing Engineer at Mahindra & Mahindra, working in core mechanical and industrial engineering. A B.Tech IT graduate (Class of 2019), Bhavana enjoys mentoring students interested in automotive engineering, mechanical design."
+          },
+          {
+            "id": "alum_0081",
+            "score": 0.8648,
+            "name": "Swathi Bose",
+            "domain": "core_software",
+            "company": "Atlassian",
+            "role": "Engineering Manager",
+            "explicit_domain_wording": true,
+            "bio": "Swathi Bose is a Engineering Manager at Atlassian, working on core software infrastructure and cloud platforms. A B.Tech Mechanical graduate (Class of 2015), Swathi enjoys mentoring students interested in developer tools, distributed systems."
+          },
+          {
+            "id": "alum_0078",
+            "score": 0.8547,
+            "name": "Aarav Gupta",
+            "domain": "core_engineering",
+            "company": "GE Aerospace",
+            "role": "Project Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Aarav Gupta designs turbine components and thermal systems at GE Aerospace as a Project Engineer. A B.Tech Mechanical graduate (Class of 2013), Aarav enjoys mentoring students interested in mechanical design, robotics."
+          }
+        ],
+        "precision_at_5": 0.8,
+        "mean_latency_ms": 1.1672
+      },
+      "q11": {
+        "query": "I want to pursue academic research and a PhD",
+        "top_k": [
+          {
+            "id": "alum_0166",
+            "score": 0.8809,
+            "name": "Aryan Sharma",
+            "domain": "academia_research",
+            "company": "Stanford University",
+            "role": "PhD Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Aryan Sharma is an PhD Researcher at Stanford University, researching applied mathematics and academic theory. A B.Tech Mechanical graduate (Class of 2015), Aryan enjoys mentoring students interested in applied research, academia."
+          },
+          {
+            "id": "alum_0065",
+            "score": 0.8702,
+            "name": "Anjali Bose",
+            "domain": "data_ai",
+            "company": "Databricks",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Anjali Bose is a AI Researcher at Databricks, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2019), Anjali enjoys mentoring students interested in NLP, computer vision."
+          },
+          {
+            "id": "alum_0003",
+            "score": 0.8697,
+            "name": "Ananya Pillai",
+            "domain": "data_ai",
+            "company": "OpenAI",
+            "role": "AI Researcher",
+            "explicit_domain_wording": true,
+            "bio": "Ananya Pillai is a AI Researcher at OpenAI, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2018), Ananya enjoys mentoring students interested in MLOps, computer vision."
+          },
+          {
+            "id": "alum_0163",
+            "score": 0.8643,
+            "name": "Akash Venkatesh",
+            "domain": "academia_research",
+            "company": "Stanford University",
+            "role": "Research Associate",
+            "explicit_domain_wording": true,
+            "bio": "Akash Venkatesh is an Research Associate at Stanford University, researching applied mathematics and academic theory. A B.Tech IT graduate (Class of 2018), Akash enjoys mentoring students interested in applied research, signal processing."
+          },
+          {
+            "id": "alum_0025",
+            "score": 0.859,
+            "name": "Akash Menon",
+            "domain": "data_ai",
+            "company": "Hugging Face",
+            "role": "MLOps Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Akash Menon is a MLOps Engineer at Hugging Face, working on artificial intelligence and machine learning research. A M.Sc Data Science graduate (Class of 2014), Akash enjoys mentoring students interested in computer vision, MLOps."
+          }
+        ],
+        "precision_at_5": 0.4,
+        "mean_latency_ms": 1.2319
+      },
+      "q12": {
+        "query": "Interested in brand strategy and digital marketing careers",
+        "top_k": [
+          {
+            "id": "alum_0153",
+            "score": 0.878,
+            "name": "Tara Mahesh",
+            "domain": "marketing_media",
+            "company": "Netflix",
+            "role": "Product Marketing Manager",
+            "explicit_domain_wording": true,
+            "bio": "Tara Mahesh works in digital marketing at Netflix as a Product Marketing Manager, running brand campaigns. A M.Tech CSE graduate (Class of 2008), Tara enjoys mentoring students interested in digital marketing, brand strategy."
+          },
+          {
+            "id": "alum_0154",
+            "score": 0.8777,
+            "name": "Saanvi Venkatesh",
+            "domain": "marketing_media",
+            "company": "WPP",
+            "role": "Growth Marketer",
+            "explicit_domain_wording": true,
+            "bio": "Saanvi Venkatesh works in digital marketing at WPP as a Growth Marketer, running brand campaigns. A M.Tech CSE graduate (Class of 2017), Saanvi enjoys mentoring students interested in digital marketing, content strategy."
+          },
+          {
+            "id": "alum_0164",
+            "score": 0.8774,
+            "name": "Gopal Das",
+            "domain": "marketing_media",
+            "company": "WPP",
+            "role": "Brand Manager",
+            "explicit_domain_wording": true,
+            "bio": "Gopal Das works in digital marketing at WPP as a Brand Manager, running brand campaigns. A M.Tech CSE graduate (Class of 2020), Gopal enjoys mentoring students interested in brand strategy, digital marketing."
+          },
+          {
+            "id": "alum_0169",
+            "score": 0.8715,
+            "name": "Arun Menon",
+            "domain": "consulting",
+            "company": "McKinsey & Company",
+            "role": "Engagement Manager",
+            "explicit_domain_wording": false,
+            "bio": "Arun Menon is a Engagement Manager at McKinsey & Company, running digital-transformation programmes for retail and telecom clients. A M.Tech CSE graduate (Class of 2015), Arun enjoys mentoring students interested in digital transformation, business strategy."
+          },
+          {
+            "id": "alum_0167",
+            "score": 0.8693,
+            "name": "Lakshmi Iyer",
+            "domain": "consulting",
+            "company": "Boston Consulting Group",
+            "role": "Associate Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Lakshmi Iyer is a Associate Consultant at Boston Consulting Group, running digital-transformation programmes for retail and telecom clients. A M.Sc Data Science graduate (Class of 2008), Lakshmi enjoys mentoring students interested in business strategy, digital transformation."
+          }
+        ],
+        "precision_at_5": 0.6,
+        "mean_latency_ms": 1.1631
+      },
+      "q_special": {
+        "query": "Looking for an alumnus in fintech to guide me",
+        "top_k": [
+          {
+            "id": "alum_0148",
+            "score": 0.8645,
+            "name": "Kavya Suresh",
+            "domain": "ecommerce_logistics",
+            "company": "Flipkart",
+            "role": "Software Engineer",
+            "explicit_domain_wording": false,
+            "bio": "Kavya Suresh works at Flipkart as a Software Engineer, building demand-forecasting models for inventory planning. A B.Tech IT graduate (Class of 2020), Kavya enjoys mentoring students interested in supply chain, quick commerce."
+          },
+          {
+            "id": "alum_0158",
+            "score": 0.8632,
+            "name": "Vivaan Iyer",
+            "domain": "consulting",
+            "company": "Bain & Company",
+            "role": "Management Consultant",
+            "explicit_domain_wording": true,
+            "bio": "Vivaan Iyer is a Management Consultant at Bain & Company, advising Fortune 500 clients on business strategy. A B.Tech Mechanical graduate (Class of 2018), Vivaan enjoys mentoring students interested in business strategy, management consulting."
+          },
+          {
+            "id": "alum_0187",
+            "score": 0.8617,
+            "name": "Rahul Balan",
+            "domain": "fintech",
+            "company": "BillDesk",
+            "role": "Site Reliability Engineer",
+            "explicit_domain_wording": true,
+            "bio": "Rahul Balan works as a Site Reliability Engineer at BillDesk, building fintech products used by millions of merchants. A B.Tech IT graduate (Class of 2008), Rahul enjoys mentoring students interested in fraud detection, digital payments."
+          },
+          {
+            "id": "alum_0069",
+            "score": 0.8607,
+            "name": "Siddharth Menon",
+            "domain": "consulting",
+            "company": "Deloitte",
+            "role": "Associate Consultant",
+            "explicit_domain_wording": false,
+            "bio": "Siddharth Menon is a Associate Consultant at Deloitte, running digital-transformation programmes for retail and telecom clients. A M.Sc Data Science graduate (Class of 2018), Siddharth enjoys mentoring students interested in management consulting, business strategy."
+          },
+          {
+            "id": "alum_0178",
+            "score": 0.8594,
+            "name": "Meera Iyer",
+            "domain": "fintech",
+            "company": "Visa",
+            "role": "Data Scientist",
+            "explicit_domain_wording": true,
+            "bio": "Meera Iyer works as a Data Scientist at Visa, building fintech products used by millions of merchants. A B.Tech EEE graduate (Class of 2015), Meera enjoys mentoring students interested in lending platforms, financial inclusion."
+          }
+        ],
+        "precision_at_5": 0.4,
+        "mean_latency_ms": 1.1158
+      }
+    }
+  }
+}
