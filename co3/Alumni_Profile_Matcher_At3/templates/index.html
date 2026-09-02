@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumni Profile Matcher</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin: 30px 0;
+        }
+
+        input {
+            flex: 1;
+            padding: 14px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 14px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .result {
+            border: 1px solid #ddd;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+
+        .result h3 {
+            margin: 0 0 8px;
+        }
+
+        .score {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Alumni Profile Matcher</h1>
+
+    <p class="description">
+        Enter your career interest to find the most relevant alumni.
+    </p>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="query"
+            placeholder="Example: I am interested in AI and machine learning"
+            value="{{ query }}"
+            required
+        >
+
+        <button type="submit">
+            Search
+        </button>
+
+    </form>
+
+    {% if results %}
+
+        <h2>Top Matching Alumni</h2>
+
+        {% for person in results %}
+
+        <div class="result">
+
+            <h3>{{ loop.index }}. {{ person.name }}</h3>
+
+            <p>
+                <strong>Domain:</strong>
+                {{ person.domain }}
+            </p>
+
+            <p>
+                <strong>Company:</strong>
+                {{ person.company }}
+            </p>
+
+            <p class="score">
+                Similarity Score: {{ person.score }}
+            </p>
+
+        </div>
+
+        {% endfor %}
+
+    {% elif query %}
+
+        <p>No matching alumni found.</p>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
