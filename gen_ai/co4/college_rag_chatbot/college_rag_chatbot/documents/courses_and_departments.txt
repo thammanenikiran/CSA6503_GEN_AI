@@ -1,0 +1,27 @@
+COURSES AND DEPARTMENTS - GREENFIELD COLLEGE OF ENGINEERING
+
+Undergraduate Programs (B.Tech, 4 years, 8 semesters)
+1. Computer Science and Engineering (CSE) - Intake: 120
+2. Information Technology (IT) - Intake: 60
+3. Electronics and Communication Engineering (ECE) - Intake: 90
+4. Electrical and Electronics Engineering (EEE) - Intake: 60
+5. Mechanical Engineering (MECH) - Intake: 90
+6. Civil Engineering (CIVIL) - Intake: 60
+7. Artificial Intelligence and Data Science (AI&DS) - Intake: 60
+
+Postgraduate Programs
+- M.Tech in Computer Science and Engineering (2 years)
+- M.Tech in VLSI Design (2 years)
+- MBA (2 years, dual specialization allowed)
+
+Curriculum Structure
+Each B.Tech program follows an outcome-based education (OBE) curriculum with a mix of core subjects, professional electives, open electives, laboratory courses, mini-projects, and a mandatory 16-week industry internship in the 7th semester. Students must earn a minimum of 160 credits to graduate.
+
+Department Facilities
+The CSE department has 6 dedicated computer laboratories with over 300 systems, high-speed internet, and access to cloud computing platforms (AWS Academy, Azure for Students). The Mechanical department operates a CNC lab, robotics lab, and a 3D printing facility. The ECE department maintains a VLSI design lab and an embedded systems lab equipped with FPGA kits.
+
+Grading System
+The college follows a 10-point CGPA system. A minimum CGPA of 5.0 is required to be eligible for the degree without backlog clearance requirements. Students with more than 3 active backlogs at the end of a semester are placed under academic probation and require mentor sign-off to continue.
+
+Contact
+Dean of Academics, Second Floor, Administrative Block. Email: academics@greenfieldcollege.edu.
