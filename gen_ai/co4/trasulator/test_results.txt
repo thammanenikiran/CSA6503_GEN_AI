@@ -1,0 +1,179 @@
+ENGLISH -> TAMIL TRANSLATION APPLICATION - TEST RESULTS
+Backend under test: rule_based (neural backend requires internet access to a model hub)
+
+==========================================================================================
+A. NORMAL / REPRESENTATIVE SENTENCE TESTS
+==========================================================================================
+
+[Simple greeting]
+  Input        : 'Hello, how are you?'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நீங்கள் எப்படி இருக்கிறீர்கள் வணக்கம் ?'
+
+[Statement - present tense]
+  Input        : 'I am going to school today.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நான் செல்கிறேன் பள்ளி இன்று இருக்கிறேன்'
+
+[Statement - with object]
+  Input        : 'I like books.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நான் விரும்பு [books]'
+  OOV words    : ['books']
+  Warnings     : ['1 word(s) not found in dictionary and left in English (in brackets): books']
+
+[Question]
+  Input        : 'What is your name?'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'உங்கள் பெயர் என்ன ?'
+
+[Question 2]
+  Input        : 'Where are you going?'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நீங்கள் எங்கே செல்கிறீர்கள் ?'
+
+[Negative sentence]
+  Input        : 'I am not going to the market.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நான் இல்லை செல்கிறேன் சந்தை இருக்கிறேன்'
+
+[Politeness phrase]
+  Input        : 'Thank you very much.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'மிக்க நன்றி'
+
+[Longer sentence]
+  Input        : 'My friend and I are studying English and Tamil at school.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'என் நண்பன் மற்றும் நான் படிக்கிறேன் ஆங்கிலம் மற்றும் தமிழ் இல் பள்ளி இருக்கிறீர்கள்'
+
+[Sentence with numbers]
+  Input        : 'I have two books and three pens.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நான் வைத்திரு இரண்டு [books] மற்றும் மூன்று [pens]'
+  OOV words    : ['books', 'pens']
+  Warnings     : ['2 word(s) not found in dictionary and left in English (in brackets): books, pens']
+
+[Sentence with unknown/rare word]
+  Input        : 'The astrophysicist calibrated the telescope.'
+  Success      : True
+  Backend      : rule_based
+  Output       : '[astrophysicist] [calibrated] [telescope]'
+  OOV words    : ['astrophysicist', 'calibrated', 'telescope']
+  Warnings     : ['3 word(s) not found in dictionary and left in English (in brackets): astrophysicist, calibrated, telescope']
+
+[Short exclamation]
+  Input        : 'Good morning!'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'காலை வணக்கம் !'
+
+[Multi-clause sentence]
+  Input        : 'I am happy because the weather is very good today.'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நான் மகிழ்ச்சியான [because] வானிலை மிகவும் நல்ல இன்று இருக்கிறேன் இருக்கிறது'
+  OOV words    : ['because']
+  Warnings     : ['1 word(s) not found in dictionary and left in English (in brackets): because']
+
+==========================================================================================
+B. INVALID / EMPTY / UNEXPECTED INPUT TESTS
+==========================================================================================
+
+[Completely empty string]
+  Input        : ''
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['Input is empty. Please type an English sentence to translate.']
+
+[Whitespace only]
+  Input        : '     '
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['Input is empty. Please type an English sentence to translate.']
+
+[None value (non-string input)]
+  Input        : None
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['No input provided (received None).']
+
+[Integer input (wrong type)]
+  Input        : 12345
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['Unsupported input type: int. Expected text.']
+
+[Digits only, no letters]
+  Input        : '42 100 7'
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['Input has no alphabetic (English) content to translate; returning as-is.']
+
+[Punctuation only]
+  Input        : '!!! ??? ...'
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['Input has no alphabetic (English) content to translate; returning as-is.']
+
+[Non-English input (French)]
+  Input        : 'Bonjour, comment ça va?'
+  Success      : True
+  Backend      : rule_based
+  Output       : '[bonjour] [comment] [ça] [va] ?'
+  OOV words    : ['bonjour', 'comment', 'ça', 'va']
+  Warnings     : ['4 word(s) not found in dictionary and left in English (in brackets): bonjour, comment, va, ça']
+
+[Already-Tamil input]
+  Input        : 'வணக்கம், எப்படி இருக்கிறீர்கள்?'
+  Success      : False
+  Backend      : validation
+  Output       : ''
+  Warnings     : ['Input does not appear to be English text (non-Latin script detected). This tool translates English -> Tamil only.']
+
+[HTML/script injection attempt]
+  Input        : "<script>alert('hi')</script> Hello there"
+  Success      : True
+  Backend      : rule_based
+  Output       : '[alert] வணக்கம் வணக்கம் [there]'
+  OOV words    : ['alert', 'there']
+  Warnings     : ['Potentially unsafe characters/tags were removed from the input.', '2 word(s) not found in dictionary and left in English (in brackets): alert, there']
+
+[Very long repeated input]
+  Input        : 'hello hello hello hello hello hello hello hello hello hello hello hello hello...'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் வணக்கம் [hell]'
+  OOV words    : ['hell']
+  Warnings     : ['Input truncated to 1000 characters.', '1 word(s) not found in dictionary and left in English (in brackets): hell']
+
+[Mixed language input]
+  Input        : 'Hello நண்பா, how are you today?'
+  Success      : True
+  Backend      : rule_based
+  Output       : 'நீங்கள் எப்படி இருக்கிறீர்கள் வணக்கம் [நண] [ப] இன்று ?'
+  OOV words    : ['நண', 'ப']
+  Warnings     : ['2 word(s) not found in dictionary and left in English (in brackets): நண, ப']
+
+[Single unknown word]
+  Input        : 'Xylophonic'
+  Success      : True
+  Backend      : rule_based
+  Output       : '[xylophonic]'
+  OOV words    : ['xylophonic']
+  Warnings     : ['1 word(s) not found in dictionary and left in English (in brackets): xylophonic']
