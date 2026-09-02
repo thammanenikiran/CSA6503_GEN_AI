@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenfield College Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="header-title">
+        <span class="logo">🎓</span>
+        <div>
+          <h1>Greenfield College Assistant</h1>
+          <p>Ask me about admissions, fees, courses, exams, hostel life, or placements.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="chat-shell">
+      <div id="chat-window" class="chat-window">
+        <div class="msg bot">
+          <div class="bubble">Hi! I'm a retrieval-augmented chatbot trained on Greenfield College's official documents. Ask me a question, e.g. <em>"What is the last date to apply for admission?"</em></div>
+        </div>
+      </div>
+
+      <div class="samples">
+        {% for q in sample_questions %}
+          <button class="chip" onclick="sendSample(this)">{{ q }}</button>
+        {% endfor %}
+      </div>
+
+      <form id="chat-form" class="chat-input-row" autocomplete="off">
+        <input id="chat-input" type="text" placeholder="Type your question..." maxlength="1000" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

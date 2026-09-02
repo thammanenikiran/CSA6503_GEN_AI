@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Greenfield College Chatbot - Demo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="header-title">
+        <span class="logo">🎓</span>
+        <div>
+          <h1>Greenfield College Assistant</h1>
+          <p>Ask me about admissions, fees, courses, exams, hostel life, or placements.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="chat-shell">
+      <div class="chat-window">
+        <div class="msg bot">
+          <div class="bubble">Hi! I'm a retrieval-augmented chatbot trained on Greenfield College's official documents. Ask me a question, e.g. <em>"What is the last date to apply for admission?"</em></div>
+        </div>
+
+        {% for turn in conversation %}
+        <div class="msg user">
+          <div class="bubble">{{ turn.query }}</div>
+        </div>
+        <div class="msg bot">
+          <div class="bubble">
+            {{ turn.answer }}
+            {% if turn.sources %}
+            <span class="sources">Sources: {{ turn.sources | join(' · ') }}</span>
+            {% endif %}
+            {% if turn.status != 'ok' %}
+            <br><span class="status-badge">{{ turn.status.replace('_', ' ') }}</span>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+  </div>
+</body>
+</html>
